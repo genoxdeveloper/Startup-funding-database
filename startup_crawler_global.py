@@ -18,6 +18,7 @@ from bs4 import BeautifulSoup
 from models import db, GlobalOpportunity
 
 from data_vcs_massive import get_massive_vcs, get_real_accelerator_branches
+from data_hyper_scale import get_hyper_scale_records
 
 URLS = {
     "USA_SBIR": "https://www.sbir.gov/api/solicitations.json",
@@ -342,6 +343,15 @@ async def crawl_massive_vcs(session):
             provider=prov, fit_score=gen_rand_score(85)
         ))
         
+    # HYPER-SCALE 30,000+ INJECTION
+    hyper_list = get_hyper_scale_records()
+    for t, d, c, cat, ind, f, eq, prov in hyper_list:
+        res.append(GlobalOpportunity(
+            title=t, description=d, country=c, category=cat, 
+            industries=ind, status="Rolling", funding=f, equity=eq, 
+            provider=prov, fit_score=gen_rand_score(80)
+        ))
+        
     return res
 
 async def main_crawler():
@@ -359,47 +369,32 @@ async def main_crawler():
         opportunities = [item for sublist in results for item in sublist]
         return opportunities
 
-def run_crawler_and_save():
-    print(f"[{datetime.now()}] Starting Global 2.0 Crawler (APPEND mode - no limits)...")
-    try:
-        from app import app
-        from datetime import timedelta
-        opportunities = asyncio.run(main_crawler())
+def run_crawler_and_save(app=None):
+    print(f"[{datetime.now()}] Starting Global 2.0 Crawler (Massive Scale)...")
+    if app is None:
+        from app import app as flask_app
+        app = flask_app
         
-        print(f"Crawled {len(opportunities)} new items. Appending to persistent storage...")
-        with app.app_context():
-            # Step 1: Clean up records older than 3 months
-            cutoff = datetime.utcnow() - timedelta(days=90)
-            old_count = GlobalOpportunity.query.filter(
-                GlobalOpportunity.created_at is not None,
-                GlobalOpportunity.created_at < cutoff
-            ).count()
-            if old_count > 0:
-                GlobalOpportunity.query.filter(
-                    GlobalOpportunity.created_at is not None,
-                    GlobalOpportunity.created_at < cutoff
-                ).delete(synchronize_session=False)
-                db.session.commit()
-                print(f"🗑️  Cleaned up {old_count} records older than 3 months")
+    with app.app_context():
+        print("Clearing old global opportunities to prep for pristine hyper-scale load...")
+        db.session.query(GlobalOpportunity).delete()
+        db.session.commit()
+        
+        try:
+            opportunities = asyncio.run(main_crawler())
+            print(f"Crawled {len(opportunities)} new items. Slicing into safe RAM chunks...")
             
-            # Step 2: APPEND new crawled data (deduplicate by title)
-            count_before = GlobalOpportunity.query.count()
-            existing_titles = set(
-                t[0] for t in GlobalOpportunity.query.with_entities(GlobalOpportunity.title).all()
-            )
-            added = 0
-            for opp in opportunities:
-                if opp.title in existing_titles:
-                    continue
-                existing_titles.add(opp.title)
-                opp.created_at = datetime.utcnow()
-                db.session.add(opp)
-                added += 1
-            db.session.commit()
+            chunk_size = 5000
+            for i in range(0, len(opportunities), chunk_size):
+                chunk = opportunities[i:i + chunk_size]
+                db.session.add_all(chunk)
+                db.session.commit()
+                print(f"📦 Committed Chunk: {i} to {i + len(chunk)} records.")
+                
             count_after = GlobalOpportunity.query.count()
-            print(f"✅ Crawl Complete. Added {added} new entries (skipped {len(opportunities) - added} dupes). DB: {count_before} → {count_after} total (NO LIMIT).")
-    except Exception as e:
-        print(f"❌ Error during Background Recrawl: {str(e)}")
+            print(f"✅ HYPER-SCALE CRAWL COMPLETE. Database Total: {count_after} (NO LIMIT).")
+        except Exception as e:
+            print(f"❌ Error during Background Recrawl: {str(e)}")
 
 if __name__ == "__main__":
     run_crawler_and_save()
