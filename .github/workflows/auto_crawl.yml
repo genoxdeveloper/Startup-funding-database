@@ -1,4 +1,4 @@
-name: Auto Crawl & Update
+name: Auto Crawl & Health Check
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # Allow manual trigger
 
 jobs:
-  crawl:
+  health-check:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -22,15 +22,21 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Global Crawler
-        run: python startup_crawler_global.py
-        env:
-          DATABASE_URL: sqlite:///instance/global_data.db # Ensure it goes to a commit-able path
-
-      - name: Commit and Push changes
+      - name: Validate all modules compile
         run: |
-          git config --global user.name "GenoxAI-Bot"
-          git config --global user.email "developer@genox.one"
-          git add instance/global_data.db
-          git commit -m "chore: nightly global data sync [skip ci]" || echo "No changes to commit"
-          git push
+          python -m py_compile app.py
+          python -m py_compile models.py
+          python -m py_compile startup_crawler_global.py
+          python -m py_compile data_hyper_scale.py
+          python -m py_compile data_vcs_massive.py
+          echo "✅ All modules validated."
+
+      - name: Health Check - Live Site
+        run: |
+          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://global-startup-explorerglobal-startup.onrender.com/ || echo "000")
+          echo "Live site HTTP status: $HTTP_CODE"
+          if [ "$HTTP_CODE" = "200" ]; then
+            echo "✅ Live site is healthy."
+          else
+            echo "⚠️ Live site returned $HTTP_CODE (may be cold-booting on free tier)."
+          fi

@@ -178,7 +178,21 @@ def get_real_accelerator_branches():
         ("Boston", "USA"), ("Seattle", "USA"), ("Los Angeles", "USA"), ("Miami", "USA"),
         ("Denver", "USA"), ("Atlanta", "USA"), ("Washington DC", "USA"), ("Buenos Aires", "Argentina"),
         ("Santiago", "Chile"), ("Bogota", "Colombia"), ("Lima", "Peru"), ("Cairo", "Egypt"),
-        ("Casablanca", "Morocco"), ("Johannesburg", "South Africa"), ("Accra", "Ghana")
+        ("Casablanca", "Morocco"), ("Johannesburg", "South Africa"), ("Accra", "Ghana"),
+        # Expansion: 30+ new cities
+        ("Doha", "Qatar"), ("Abu Dhabi", "UAE"), ("Muscat", "Oman"), ("Amman", "Jordan"),
+        ("Beirut", "Lebanon"), ("Tunis", "Tunisia"), ("Addis Ababa", "Ethiopia"), ("Kigali", "Rwanda"),
+        ("Dar es Salaam", "Tanzania"), ("Kampala", "Uganda"), ("Lusaka", "Zambia"), ("Maputo", "Mozambique"),
+        ("Dakar", "Senegal"), ("Abidjan", "Ivory Coast"), ("Luanda", "Angola"),
+        ("Lisbon", "Portugal"), ("Tallinn", "Estonia"), ("Riga", "Latvia"), ("Vilnius", "Lithuania"),
+        ("Bratislava", "Slovakia"), ("Ljubljana", "Slovenia"), ("Zagreb", "Croatia"), ("Sofia", "Bulgaria"),
+        ("Tbilisi", "Georgia"), ("Baku", "Azerbaijan"), ("Almaty", "Kazakhstan"), ("Tashkent", "Uzbekistan"),
+        ("Colombo", "Sri Lanka"), ("Dhaka", "Bangladesh"), ("Karachi", "Pakistan"), ("Lahore", "Pakistan"),
+        ("Hanoi", "Vietnam"), ("Phnom Penh", "Cambodia"), ("Yangon", "Myanmar"),
+        ("Portland", "USA"), ("Nashville", "USA"), ("Raleigh", "USA"), ("San Diego", "USA"),
+        ("Phoenix", "USA"), ("Minneapolis", "USA"), ("Detroit", "USA"), ("Pittsburgh", "USA"),
+        ("Osaka", "Japan"), ("Fukuoka", "Japan"), ("Busan", "South Korea"), ("Shenzhen", "China"),
+        ("Chengdu", "China"), ("Hangzhou", "China"), ("Pune", "India"), ("Hyderabad", "India"), ("Chennai", "India"),
     ]
     
     franchises = [

@@ -72,7 +72,7 @@ a { color: var(--primary); text-decoration: none; }
 .header-left h1 { 
   font-size: 22px; font-weight: 800; letter-spacing: -0.02em;
   background: linear-gradient(135deg, #fff 0%, #a1a1aa 100%); 
-  -webkit-background-clip: text; color: transparent; 
+  -webkit-background-clip: text; background-clip: text; color: transparent; 
 }
 .header-left .sub { color: var(--text-muted); font-size: 13px; margin-top: 2px; }
 .header-right { display: flex; align-items: center; gap: 16px; }
@@ -134,7 +134,7 @@ select { min-width: 160px; cursor: pointer; }
 .top-rank { position: absolute; top: -8px; right: -4px; font-size: 52px; font-weight: 900; color: rgba(255,255,255,0.03); line-height: 1; }
 .top-title { font-size: 14px; font-weight: 600; line-height: 1.35; margin-bottom: 10px; padding-right: 20px; }
 .top-meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 11px; }
-.top-desc { font-size: 11px; color: var(--text-muted); margin-top: 8px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.top-desc { font-size: 11px; color: var(--text-muted); margin-top: 8px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
 /* Tags */
 .tag { 
@@ -260,7 +260,7 @@ tr:hover td { background: var(--surface-hover); }
     <button class="tab" data-cat="Gov Grants">🏛 Gov Grants</button>
     <button class="tab" data-cat="Corporate">🏢 Corporate OI</button>
     <button class="tab" data-cat="VCs & Accelerators">🚀 VCs & Accelerators</button>
-    <button class="tab" data-cat="Perks">☁️ Cloud & Perks</button>
+    <button class="tab" data-cat="Cloud & Perks">☁️ Cloud & Perks</button>
     <button class="tab" data-cat="Relocation/Growth">🌏 Relocation</button>
   </div>
 

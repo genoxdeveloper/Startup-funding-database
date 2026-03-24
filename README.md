@@ -2,7 +2,7 @@
 
 # 🌍 Global Startup Explorer
 
-**Discover startup funding, grants, accelerators & cloud perks across 100+ countries and 100+ industries.**
+**Discover startup funding, grants, accelerators & cloud perks across 190+ countries and 100+ industries. 32,500+ real-world records.**
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-2.x-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
@@ -64,7 +64,7 @@ As a startup based in Seoul, South Korea ([Genox Holdings](https://genoxholdings
 
 ![Dashboard](docs/screenshots/demo_landing.png)
 
-*4,800+ opportunities across 104 countries — all searchable and filterable*
+*32,500+ opportunities across 190+ countries — all searchable and filterable*
 
 ### Category Filtering
 

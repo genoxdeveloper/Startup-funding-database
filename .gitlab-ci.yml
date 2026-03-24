@@ -2,6 +2,7 @@ image: python:3.11-slim
 
 stages:
   - build
+  - test
 
 variables:
   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
@@ -15,9 +16,17 @@ build:
   script:
     - pip install --upgrade pip
     - pip install -r requirements.txt
+    - echo "Dependencies installed successfully"
+
+test:
+  stage: test
+  script:
+    - pip install --upgrade pip
+    - pip install -r requirements.txt
     - python -m py_compile app.py
     - python -m py_compile models.py
-    - python -m py_compile data_mock.py
     - python -m py_compile startup_crawler_global.py
-    - echo "All modules compiled successfully"
-  tags: []
+    - python -m py_compile data_hyper_scale.py
+    - python -m py_compile data_vcs_massive.py
+    - echo "✅ All modules compiled successfully — no syntax errors."
+
