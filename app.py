@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, jsonify
-from data_mock import generate_mock_data
 from datetime import datetime, timedelta
 
 import os
@@ -42,7 +41,7 @@ def cleanup_old_records():
 # Initial seed: only runs if DB is completely empty (first deploy)
 # After that, data accumulates via crawler without any cap
 # ---------------------------------------------------------------------------
-def sync_mock_to_db():
+def sync_real_data_to_db():
     with app.app_context():
         # Step 1: Clean up old records (older than 3 months)
         cleanup_old_records()
@@ -50,29 +49,13 @@ def sync_mock_to_db():
         # Step 2: Seed ONLY if the DB is completely empty (first-time init)
         current_count = GlobalOpportunity.query.count()
         if current_count == 0:
-            print("Database is empty. Seeding with initial dataset...")
-            records = generate_mock_data()
-            for r in records:
-                opp = GlobalOpportunity(
-                    title=r.get('title'),
-                    description=r.get('description'),
-                    country=r.get('country'),
-                    category=r.get('category'),
-                    industries=",".join(r.get('industries', [])) if isinstance(r.get('industries'), list) else r.get('industries', ''),
-                    status=r.get('status'),
-                    funding=r.get('funding'),
-                    equity=r.get('equity'),
-                    provider=r.get('provider'),
-                    fit_score=r.get('fit_score', 50),
-                    created_at=datetime.utcnow()
-                )
-                db.session.add(opp)
-            db.session.commit()
-            print(f"✅ Initial seed complete: {len(records)} records inserted (NO hardcoded limit)")
+            print("Database is empty. Seeding with 100% real global dataset...")
+            run_crawler_and_save()
+            print("✅ Initial real data seed complete.")
         else:
             print(f"📊 Database has {current_count} records. No limit — data accumulates indefinitely.")
 
-sync_mock_to_db()
+sync_real_data_to_db()
 
 # ---------------------------------------------------------------------------
 # Auto-crawl scheduler: runs every 6 hours in background

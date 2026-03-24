@@ -118,26 +118,34 @@ async def crawl_europe(session):
         ("EIC Pathfinder", "Grants for early-stage visionary research projects.", "EU", "Gov Grants", "Experimental,Science", "Up to €4M"),
         ("EIT Digital Venture Program", "Support for European early-stage digital deep tech startups.", "EU", "VCs & Accelerators", "SaaS,Digital,Web3", "€25K - €100K"),
         ("EIT Urban Mobility Accelerator", "Scaling European mobility startups.", "EU", "VCs & Accelerators", "Mobility,CleanTech", "€50K - €500K"),
+        ("EIT Health InnoStars Awards", "Funding for health startups in emerging European regions.", "EU", "Gov Grants", "HealthTech", "€25K"),
     ]
     
-    # 2.3 DACH, Nordics & France
+    # 2.3 DACH, Nordics, France, and Spain
     dach_nordic_opps = [
         ("EXIST Business Start-up Grant", "Support for university tech spin-offs.", "Germany", "Gov Grants", "University Spin-offs", "€30K - €150K"),
         ("High-Tech Gründerfonds (HTGF)", "Seed investor for high-tech startups in Germany.", "Germany", "VCs & Accelerators", "DeepTech,SaaS", "€1M Seed"),
+        ("SpinLab Accelerator", "The HHL Accelerator in Leipzig.", "Germany", "VCs & Accelerators", "Energy,E-health", "€15K"),
         ("Bpifrance French Tech Seed", "Co-investment matching for deep tech startups.", "France", "Gov Grants", "DeepTech,AI", "Up to €250K"),
+        ("Station F Founders Program", "World's biggest startup campus incubation.", "France", "VCs & Accelerators", "All", "Incubation"),
         ("French Tech Visa", "Fast-track tech visa for international founders.", "France", "Relocation/Growth", "All", "Visa Support"),
         ("Vinnova Innovative Startups", "Sweden's innovation agency grant for R&D.", "Sweden", "Gov Grants", "CleanTech,Mobility", "SEK 300K"),
-        ("Business Finland Tempo", "Funding for international growth capabilities.", "Finland", "Gov Grants", "Software,Gaming", "€50K - €100K")
+        ("Business Finland Tempo", "Funding for international growth capabilities.", "Finland", "Gov Grants", "Software,Gaming", "€50K - €100K"),
+        ("Startup Wise Guys", "B2B SaaS and cybersecurity accelerator.", "Estonia", "VCs & Accelerators", "B2B SaaS,Cybersecurity", "€100K", "Yes"),
+        ("ENISA Cybersecurity Grant", "EU agency funding for cybersecurity innovation.", "Spain", "Gov Grants", "Cybersecurity", "€50K - €200K"),
+        ("Lanzadera", "Corporate accelerator by Juan Roig.", "Spain", "VCs & Accelerators", "Retail,Logistics", "Up to €500K Loan")
     ]
     
-    for t, d, c, cat, ind, f in eu_opps + dach_nordic_opps:
-        prov = next((p for p in ["Innovate UK", "European Commission", "EIT", "BMWi", "HTGF", "Bpifrance", "French Tech", "Vinnova", "Business Finland"] if p.lower() in t.lower() or p.lower() in d.lower()), "EU Agency")
-        res.append(GlobalOpportunity(title=t, description=d, country=c, category=cat, industries=ind, status="Open", funding=f, equity="No", provider=prov, fit_score=gen_rand_score(90)))
+    for t, d, c, cat, ind, *rest in eu_opps + dach_nordic_opps:
+        f = rest[0] if rest else "Unknown"
+        eq = rest[1] if len(rest) > 1 else "No"
+        prov = next((p for p in ["Innovate UK", "European Commission", "EIT", "BMWi", "HTGF", "Bpifrance", "French Tech", "Vinnova", "Business Finland", "Station F", "Startup Wise Guys"] if p.lower() in t.lower() or p.lower() in d.lower()), "EU Agency")
+        res.append(GlobalOpportunity(title=t, description=d, country=c, category=cat, industries=ind, status="Open", funding=f, equity=eq, provider=prov, fit_score=gen_rand_score(90)))
         
     return res
 
 # -------------------------------------------------------------------------
-# 3. Asia Pacific (Singapore, India, Japan, South Korea) (40+ items)
+# 3. Asia Pacific (Singapore, India, Japan, South Korea, etc.) (60+ items)
 # -------------------------------------------------------------------------
 async def crawl_asia_pacific(session):
     print("Crawling Asia Pacific (SG, IN, JP, KR)...")
@@ -148,33 +156,57 @@ async def crawl_asia_pacific(session):
         ("Startup SG Tech", "POC/POV grant for proprietary technology development.", "Singapore", "Gov Grants", "HardTech,BioTech", "S$250K - S$500K"),
         ("Startup SG Founder", "Mentorship and startup capital grant for first-time entrepreneurs.", "Singapore", "Gov Grants", "All", "S$50K"),
         ("EDBI Venture Fund", "Corporate investment arm of EDB investing in globally competitive companies.", "Singapore", "VCs & Accelerators", "SaaS,Fintech", "S$5M - S$20M"),
+        ("Entrepreneur First Singapore", "Deep tech talent investor and company builder.", "Singapore", "VCs & Accelerators", "DeepTech,AI", "S$75K", "Yes"),
+        ("Antler SE Asia", "Day zero investing and co-founder matching.", "Singapore", "VCs & Accelerators", "All", "$100K", "Yes"),
         # India
         ("Startup India Seed Fund Scheme (SISFS)", "Seed funding for prototype development and trials.", "India", "Gov Grants", "AgriTech,HealthTech", "₹50 Lakh"),
         ("MeitY TIDE 2.0", "Technology Incubation and Development of Entrepreneurs.", "India", "Gov Grants", "ICT,Electronics", "₹1 Crore"),
-        ("Sequoia Surge (Peak XV)", "Seed acceleration program for startups in India and SE Asia.", "India", "VCs & Accelerators", "All", "$1M - 3M"),
+        ("Peak XV Surge", "Seed acceleration program for startups in India and SE Asia.", "India", "VCs & Accelerators", "All", "$1M - 3M", "Yes"),
+        ("CIE IIIT Hyderabad", "Deep tech incubator.", "India", "VCs & Accelerators", "AI,Robotics", "₹50 Lakh", "Yes"),
+        # US Gov / Academic
+        ("NSF SBIR/STTR Phase I", "America's Seed Fund for deep-tech, hardware, and advanced materials.", "USA", "Gov Grants", "DeepTech,Hardware", "Up to $275K"),
+        ("DOE ARPA-E", "Advanced Research Projects Agency-Energy grants for high-impact energy tech.", "USA", "Gov Grants", "CleanTech,Energy", "Up to $10M"),
+        ("NIH SBIR (National Institutes of Health)", "Funding for early-stage health and life sciences research.", "USA", "Gov Grants", "HealthTech,BioTech", "Up to $300K"),
+        ("StartX (Stanford)", "Zero-equity founder community and accelerator.", "USA", "VCs & Accelerators", "All", "Zero Equity"),
+        ("SkyDeck (UC Berkeley)", "Accelerator and incubator program offering investment and mentorship.", "USA", "VCs & Accelerators", "DeepTech,AI", "$200K investment"),
+        # Top Tier NA Specific Accelerators
+        ("Alchemist Accelerator", "Premier B2B enterprise startup accelerator.", "USA", "VCs & Accelerators", "B2B SaaS,Enterprise", "$25K", "Yes"),
+        ("IndieBio (SOSV)", "Life sciences and biotech accelerator program.", "USA", "VCs & Accelerators", "BioTech,AgTech", "$500K", "Yes"),
+        ("HAX (SOSV)", "Hard tech and robotics venture fund and accelerator.", "USA", "VCs & Accelerators", "Hardware,Robotics", "$250K", "Yes"),
+        ("MassChallenge", "Zero-equity accelerator and global network for early-stage startups.", "USA", "VCs & Accelerators", "All", "Up to $100K Zero-Equity"),
+        ("EvoNexus", "California's leading non-profit technology incubator.", "USA", "VCs & Accelerators", "Semiconductors,Fintech", "Mentorship"),
         # Japan
         ("J-Startup METI Program", "Support for globally competitive Japanese startups.", "Japan", "Gov Grants", "DeepTech,Hardware", "Subsidy + Mentorship"),
         ("NEDO Seed-stage Tech-based Startups (STS)", "R&D grant for deep-tech.", "Japan", "Gov Grants", "DeepTech,Materials", "¥70M - ¥200M"),
         ("SoftBank Vision Fund Emerge", "Accelerator for early-stage diverse founders.", "Japan", "VCs & Accelerators", "AI,Consumer", "Equity Investment"),
+        ("Coral Capital Seed", "Leading early stage VC in Japan.", "Japan", "VCs & Accelerators", "SaaS,Fintech", "¥100M", "Yes"),
         # South Korea (Global perspective)
         ("TIPS (Tech Incubator Program for Startup)", "Matching R&D funds after private investment.", "South Korea", "Gov Grants", "DeepTech,AI", "KRW 500M - 700M"),
         ("K-Startup Grand Challenge", "Inbound program for foreign startups to enter Korea.", "South Korea", "Relocation/Growth", "All", "$10K - $120K"),
+        ("Seoul Fintech Lab", "Incubation and scaling for Asian fintech startups.", "South Korea", "VCs & Accelerators", "Fintech,Web3", "Office Space + Mentorship"),
         # Taiwan & Hong Kong
         ("Taiwan Employment Gold Card", "4-in-1 visa for global tech talent and founders.", "Taiwan", "Relocation/Growth", "AI,Semiconductors", "Visa + Tax Perks"),
+        ("AppWorks Accelerator", "Greater Southeast Asia leading accelerator.", "Taiwan", "VCs & Accelerators", "Web3,AI", "Mentorship", "Yes"),
         ("HKSTP Incubation Program", "Hong Kong Science Park funding and office space.", "Hong Kong", "VCs & Accelerators", "Fintech,Biotech", "Up to HKD 1.29M"),
         ("Cyberport Incubation Program", "Financial assistance for digital tech startups.", "Hong Kong", "VCs & Accelerators", "Digital,Web3", "Up to HKD 500K"),
+        # Oceania
+        ("Startmate Accelerator", "Australia and New Zealand's most ambitious accelerator.", "Australia", "VCs & Accelerators", "All", "AUD 120K", "Yes"),
+        ("Blackbird Giants", "Founder mentoring program.", "Australia", "VCs & Accelerators", "All", "Mentorship", "No"),
+        ("CSIRO Kick-Start", "R&D funding for Australian startups.", "Australia", "Gov Grants", "DeepTech,AgTech", "AUD 50K"),
     ]
     
-    for t, d, c, cat, ind, f in ap_opps:
-        prov = next((p for p in ["Enterprise SG", "EDBI", "DPIIT", "MeitY", "Peak XV", "METI", "NEDO", "SoftBank", "MSS", "NIPA", "HKSTP", "Cyberport", "Taiwan NDC"] if p.lower() in t.lower() or p.lower() in d.lower()), "Gov Agency")
-        res.append(GlobalOpportunity(title=t, description=d, country=c, category=cat, industries=ind, status="Rolling", funding=f, equity="Varies", provider=prov, fit_score=gen_rand_score(89)))
+    for t, d, c, cat, ind, *rest in ap_opps:
+        f = rest[0] if rest else "Unknown"
+        eq = rest[1] if len(rest) > 1 else "Varies"
+        prov = next((p for p in ["Enterprise SG", "EDBI", "DPIIT", "MeitY", "Peak XV", "NSF", "DOE", "NIH", "StartX", "SkyDeck", "Alchemist", "IndieBio", "HAX", "MassChallenge", "EvoNexus", "METI", "NEDO", "SoftBank", "Coral Capital", "MSS", "NIPA", "HKSTP", "Cyberport", "Taiwan NDC", "Startmate", "CSIRO", "Antler", "AppWorks"] if p.lower() in t.lower() or p.lower() in d.lower()), "Gov Agency")
+        res.append(GlobalOpportunity(title=t, description=d, country=c, category=cat, industries=ind, status="Rolling", funding=f, equity=eq, provider=prov, fit_score=gen_rand_score(89)))
     return res
 
 # -------------------------------------------------------------------------
 # 4. MEA & LatAm (UAE, Saudi, Brazil, Africa) (30+ items)
 # -------------------------------------------------------------------------
 async def crawl_mea_latam(session):
-    print("Crawling MEA, LatAm (UAE, Saudi Arabia, Brazil, South Africa)...")
+    print("Crawling MEA, LatAm & Africa...")
     res = []
     
     mea_latam_opps = [
@@ -183,16 +215,28 @@ async def crawl_mea_latam(session):
         ("DIFC FinTech Hive", "Accelerator for fintech in Dubai.", "UAE", "VCs & Accelerators", "Fintech,Web3", "Mentorship + Network"),
         ("TAQADAM Startup Accelerator", "KAUST and SABB accelerator program for early-stage startups.", "Saudi Arabia", "VCs & Accelerators", "DeepTech,SaaS", "SAR 150K Zero-equity grant"),
         ("Sanabil 500 MENA Seed Accelerator", "Dedicated fund for early-stage startups in MENA.", "Saudi Arabia", "VCs & Accelerators", "All", "$100K Seed"),
-        # LatAm & Africa
+        ("Area 2071 Incubator", "Government-backed incubator in Dubai.", "UAE", "VCs & Accelerators", "GovTech,Smart Cities", "Facilities"),
+        # LatAm
+        ("Start-Up Chile (Build, Ignite, Growth)", "Equity-free acceleration for global founders.", "Chile", "Relocation/Growth", "All", "Up to $100K Equity-free"),
         ("BNDES Garagem", "Brazilian development bank startup initiative.", "Brazil", "Gov Grants", "AgriTech,EdTech", "Varies"),
         ("Kaszek Ventures Seed Fund", "Early stage tech investments in Latin America.", "Brazil", "VCs & Accelerators", "Fintech,Marketplace", "$1M - $5M"),
+        ("NXTP Ventures", "B2B tech early-stage fund for LatAm.", "Argentina", "VCs & Accelerators", "B2B SaaS,Cloud", "$500K - $2M"),
+        ("Platanus Ventures", "LatAm's Y Combinator equivalent incubator.", "Chile", "VCs & Accelerators", "All", "$100K", "Yes"),
+        ("500 Startups LatAm", "Seed stage investments for Spanish-speaking startups.", "Mexico", "VCs & Accelerators", "All", "$60K", "Yes"),
+        # Africa
         ("Flat6Labs Africa", "Seed and early-stage venture capital firm operating in MENA/Africa.", "South Africa", "VCs & Accelerators", "SaaS,Logistics", "$50K - $250K"),
-        ("Norrsken Accelerator Africa", "Equity-free grants and investments for impact startups.", "South Africa", "VCs & Accelerators", "Impact,CleanTech", "$125K Seed")
+        ("Norrsken Accelerator Africa", "Equity-free grants and investments for impact startups.", "South Africa", "VCs & Accelerators", "Impact,CleanTech", "$125K Seed"),
+        ("MEST Africa", "Pan-African training program, seed fund, and incubator.", "Ghana", "VCs & Accelerators", "Software", "$100K", "Yes"),
+        ("Startupbootcamp AfriTech", "Leading African accelerator for disruptive tech.", "South Africa", "VCs & Accelerators", "Fintech,Insurtech", "€15K", "Yes"),
+        ("Tony Elumelu Foundation Entrepreneurship", "Seed capital, training and mentoring for African entrepreneurs.", "Nigeria", "Gov Grants", "All", "$5K Seed Grant"),
+        ("Founders Factory Africa", "Corporate-backed venture builder and investor.", "South Africa", "VCs & Accelerators", "HealthTech,AgriTech", "£100K - £250K"),
     ]
     
-    for t, d, c, cat, ind, f in mea_latam_opps:
-        prov = next((p for p in ["Hub71", "DIFC", "KAUST", "Sanabil", "BNDES", "Kaszek", "Flat6Labs", "Norrsken"] if p.lower() in t.lower() or p.lower() in d.lower()), "Regional Hub")
-        res.append(GlobalOpportunity(title=t, description=d, country=c, category=cat, industries=ind, status="Open", funding=f, equity="Variable", provider=prov, fit_score=gen_rand_score(85)))
+    for t, d, c, cat, ind, *rest in mea_latam_opps:
+        f = rest[0] if rest else "Unknown"
+        eq = rest[1] if len(rest) > 1 else "Variable"
+        prov = next((p for p in ["Hub71", "DIFC", "KAUST", "Sanabil", "Area 2071", "Start-Up Chile", "BNDES", "Kaszek", "NXTP", "Platanus", "500 Startups", "Flat6Labs", "Norrsken", "MEST", "Startupbootcamp", "Tony Elumelu", "Founders Factory"] if p.lower() in t.lower() or p.lower() in d.lower()), "Regional Hub")
+        res.append(GlobalOpportunity(title=t, description=d, country=c, category=cat, industries=ind, status="Open", funding=f, equity=eq, provider=prov, fit_score=gen_rand_score(85)))
     return res
 
 # -------------------------------------------------------------------------
@@ -288,7 +332,7 @@ async def main_crawler():
         return opportunities
 
 def run_crawler_and_save():
-    print(f"[{datetime.now()}] Starting Global 2.0 Crawler (APPEND mode — no limits)...")
+    print(f"[{datetime.now()}] Starting Global 2.0 Crawler (APPEND mode - no limits)...")
     try:
         from app import app
         from datetime import timedelta
