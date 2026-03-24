@@ -100,6 +100,9 @@ def api_data():
     industry = request.args.get('industry', '')
     category = request.args.get('category', '')
     search = request.args.get('search', '').lower()
+    page = request.args.get('page', 1, type=int)
+    per_page = request.args.get('per_page', 50, type=int)
+    per_page = min(per_page, 100)  # Safety cap
 
     query = GlobalOpportunity.query
 
@@ -122,8 +125,15 @@ def api_data():
             GlobalOpportunity.provider.ilike(f"%{search}%")
         ))
 
-    # NO hardcoded limit — return ALL matching results
-    results = query.order_by(GlobalOpportunity.fit_score.desc()).all()
+    # Server-side pagination: get total filtered count first (lightweight)
+    total_filtered = query.count()
+
+    # Paginated query - only fetch ONE page of results
+    results = query.order_by(GlobalOpportunity.fit_score.desc()) \
+                   .offset((page - 1) * per_page) \
+                   .limit(per_page) \
+                   .all()
+
     filtered = []
     for r in results:
         filtered.append({
@@ -136,23 +146,44 @@ def api_data():
             "created_at": r.created_at.strftime('%Y-%m-%d') if r.created_at else None
         })
 
-    # Stats calculation from ALL records (no limit)
-    stats = {'countries': {}, 'categories': {}, 'industries': {}}
-    all_res = GlobalOpportunity.query.with_entities(
-        GlobalOpportunity.country, GlobalOpportunity.category, GlobalOpportunity.industries
-    ).all()
-    
-    total_records = len(all_res)
-    for c_val, cat_val, ind_str in all_res:
-        stats['countries'][c_val] = stats['countries'].get(c_val, 0) + 1
-        stats['categories'][cat_val] = stats['categories'].get(cat_val, 0) + 1
-        inds = ind_str.split(',') if ind_str else []
-        for ind in inds:
-            stats['industries'][ind] = stats['industries'].get(ind, 0) + 1
+    # Lightweight stats using SQL aggregation (no full table load)
+    total_in_db = GlobalOpportunity.query.count()
 
+    # Build stats from lightweight queries instead of loading all records
+    stats = {'countries': {}, 'categories': {}, 'industries': {}}
+    cat_counts = db.session.query(
+        GlobalOpportunity.category, db.func.count(GlobalOpportunity.id)
+    ).group_by(GlobalOpportunity.category).all()
+    for cat_val, cnt in cat_counts:
+        if cat_val:
+            stats['categories'][cat_val] = cnt
+
+    country_counts = db.session.query(
+        GlobalOpportunity.country, db.func.count(GlobalOpportunity.id)
+    ).group_by(GlobalOpportunity.country).all()
+    for c_val, cnt in country_counts:
+        if c_val:
+            stats['countries'][c_val] = cnt
+
+    # Industries are comma-separated so we need a lightweight scan
+    # But limit the scan to avoid OOM
+    ind_rows = GlobalOpportunity.query.with_entities(
+        GlobalOpportunity.industries
+    ).filter(GlobalOpportunity.industries.isnot(None)).limit(5000).all()
+    for (ind_str,) in ind_rows:
+        if ind_str:
+            for ind in ind_str.split(','):
+                ind = ind.strip()
+                if ind:
+                    stats['industries'][ind] = stats['industries'].get(ind, 0) + 1
+
+    import math
     return jsonify({
-        'total': len(filtered),
-        'total_in_db': total_records,
+        'total': total_filtered,
+        'total_in_db': total_in_db,
+        'page': page,
+        'per_page': per_page,
+        'total_pages': math.ceil(total_filtered / per_page) if per_page > 0 else 1,
         'stats': stats,
         'records': filtered,
         'last_updated': datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')

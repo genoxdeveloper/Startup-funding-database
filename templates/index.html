@@ -340,6 +340,7 @@ tr:hover td { background: var(--surface-hover); }
 // ============= State =============
 let currentCat = 'All';
 let currentPage = 1;
+let totalServerPages = 1;
 const PAGE_SIZE = 50;
 let allRecords = [];
 let filteredRecords = [];
@@ -486,19 +487,17 @@ function renderTopCards(records) {
   `).join('');
 }
 
-// ============= Render Table with Pagination =============
-function renderTable(records) {
+// ============= Render Table with Server-Side Pagination =============
+function renderTable(records, totalFiltered) {
   const tb = document.getElementById('tableBody');
-  const totalPages = Math.ceil(records.length / PAGE_SIZE);
-  const start = (currentPage - 1) * PAGE_SIZE;
-  const pageRecords = records.slice(start, start + PAGE_SIZE);
+  const totalPages = totalServerPages;
 
-  document.getElementById('tableInfo').textContent = `${records.length.toLocaleString()} results · Page ${currentPage} of ${totalPages || 1}`;
+  document.getElementById('tableInfo').textContent = `${(totalFiltered || 0).toLocaleString()} results · Page ${currentPage} of ${totalPages || 1}`;
 
-  if (pageRecords.length === 0) {
+  if (records.length === 0) {
     tb.innerHTML = `<tr><td colspan="7"><div class="empty-state"><div class="icon">🔍</div><p>No opportunities found for these filters.</p></div></td></tr>`;
   } else {
-    tb.innerHTML = pageRecords.map(r => `
+    tb.innerHTML = records.map(r => `
       <tr>
         <td><span class="tag ${getTagClass(r.category)}">${r.category}</span></td>
         <td class="td-title">${escHtml(r.title)}</td>
@@ -539,10 +538,9 @@ function renderPagination(totalPages) {
 }
 
 window.goPage = function(p) {
-  const totalPages = Math.ceil(filteredRecords.length / PAGE_SIZE);
-  if (p < 1 || p > totalPages) return;
+  if (p < 1 || p > totalServerPages) return;
   currentPage = p;
-  renderTable(filteredRecords);
+  fetchData();
   document.querySelector('.table-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
 
@@ -561,7 +559,9 @@ async function fetchData() {
     country: document.getElementById('countrySel').value,
     industry: document.getElementById('indSel').value,
     category: currentCat,
-    search: document.getElementById('searchInp').value
+    search: document.getElementById('searchInp').value,
+    page: currentPage,
+    per_page: PAGE_SIZE
   });
 
   try {
@@ -574,14 +574,15 @@ async function fetchData() {
     // Populate dropdowns once from stats
     populateDropdowns(data.stats || {});
 
-    // Store records
+    // Store records (just the current page from server)
     allRecords = data.records || [];
     filteredRecords = allRecords;
+    totalServerPages = data.total_pages || 1;
 
     // Render everything
     renderStats(data);
     renderTopCards(filteredRecords);
-    renderTable(filteredRecords);
+    renderTable(filteredRecords, data.total);
 
     // Footer
     document.getElementById('footerStats').textContent = 
