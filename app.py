@@ -41,7 +41,7 @@ def cleanup_old_records():
 # Initial seed: only runs if DB is completely empty (first deploy)
 # After that, data accumulates via crawler without any cap
 # ---------------------------------------------------------------------------
-def sync_real_data_to_db():
+def _sync_real_data_blocking():
     with app.app_context():
         # Step 1: Clean up old records (older than 3 months)
         cleanup_old_records()
@@ -49,11 +49,16 @@ def sync_real_data_to_db():
         # Step 2: Seed ONLY if the DB is completely empty (first-time init)
         current_count = GlobalOpportunity.query.count()
         if current_count == 0:
-            print("Database is empty. Seeding with 100% real global dataset...")
+            print("Database is empty. Seeding with 100% real global dataset in background...")
             run_crawler_and_save()
             print("✅ Initial real data seed complete.")
         else:
             print(f"📊 Database has {current_count} records. No limit — data accumulates indefinitely.")
+
+def sync_real_data_to_db():
+    print("Initiating async data sync check...")
+    thread = threading.Thread(target=_sync_real_data_blocking, daemon=True)
+    thread.start()
 
 sync_real_data_to_db()
 
