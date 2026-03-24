@@ -19,6 +19,18 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 init_db(app)
 
 # ---------------------------------------------------------------------------
+# Security Headers (production hardening)
+# ---------------------------------------------------------------------------
+@app.after_request
+def add_security_headers(response):
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    response.headers['X-Frame-Options'] = 'SAMEORIGIN'
+    response.headers['X-XSS-Protection'] = '1; mode=block'
+    response.headers['Referrer-Policy'] = 'strict-origin-when-cross-origin'
+    response.headers['Permissions-Policy'] = 'camera=(), microphone=(), geolocation=()'
+    return response
+
+# ---------------------------------------------------------------------------
 # Auto-cleanup: delete records older than 3 months
 # ---------------------------------------------------------------------------
 def cleanup_old_records():
@@ -94,9 +106,25 @@ def api_health():
     """Health check endpoint for monitoring."""
     try:
         count = GlobalOpportunity.query.count()
-        return jsonify({'status': 'ok', 'records': count, 'version': '2.3.0'})
+        return jsonify({'status': 'ok', 'records': count, 'version': '2.5.0'})
     except Exception:
-        return jsonify({'status': 'initializing', 'records': 0, 'version': '2.3.0'})
+        return jsonify({'status': 'initializing', 'records': 0, 'version': '2.5.0'})
+
+@app.route('/robots.txt')
+def robots_txt():
+    return Response(
+        'User-agent: *\nAllow: /\nSitemap: https://global-startup-explorerglobal-startup.onrender.com/sitemap.xml\n',
+        mimetype='text/plain'
+    )
+
+@app.route('/sitemap.xml')
+def sitemap_xml():
+    xml = '''<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://global-startup-explorerglobal-startup.onrender.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://global-startup-explorerglobal-startup.onrender.com/api/health</loc><changefreq>always</changefreq><priority>0.3</priority></url>
+</urlset>'''
+    return Response(xml, mimetype='application/xml')
 
 @app.route('/api/refresh', methods=['POST'])
 def api_refresh():

@@ -1,5 +1,5 @@
-flask
-Flask-SQLAlchemy
-aiohttp
-gunicorn
-beautifulsoup4
+flask==3.1.*
+Flask-SQLAlchemy==3.1.*
+aiohttp==3.11.*
+gunicorn==23.*
+beautifulsoup4==4.12.*

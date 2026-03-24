@@ -5,6 +5,35 @@ All notable changes to the **Global Startup Explorer** are documented here.
 
 ---
 
+## [v2.5.0] - 2026-03-25
+
+### 🔒 Infrastructure Hardening, Security & SEO / 인프라 강화, 보안 & SEO
+
+**EN:**
+
+- **SECURITY**: Added production security headers (`X-Content-Type-Options`, `X-Frame-Options`, `X-XSS-Protection`, `Referrer-Policy`, `Permissions-Policy`)
+- **SEO**: Added dynamic `robots.txt` and `sitemap.xml` endpoints for search engine discoverability
+- **INFRA**: GitLab CI merged duplicated build+test into single `validate` stage with Flask import validation
+- **INFRA**: GitHub Actions health check upgraded to use `/api/health` JSON endpoint (reports version, record count, status)
+- **DOCKER**: Dockerfile hardened — non-root user, matching Procfile config (timeout 120, 2 workers, preload), optimized apt-get
+- **DOCKER**: Added `.dockerignore` to reduce image build context
+- **DEPS**: Pinned all dependency versions (`flask==3.1.*`, etc.) to prevent breaking upgrades
+- **DOCS**: README features table updated (190+ countries, +3 new features: Sortable Columns, CSV Export, Security Headers)
+- **VERSION**: Bumped to v2.5.0
+
+**KR:**
+
+- **보안**: 프로덕션 보안 헤더 추가 (X-Content-Type-Options, X-Frame-Options, XSS Protection 등 5종)
+- **SEO**: `robots.txt` 및 `sitemap.xml` 동적 엔드포인트 추가 — 검색엔진 크롤링 허용
+- **인프라**: GitLab CI 중복 스테이지 통합 (build+test → validate) + Flask import 검증
+- **인프라**: GitHub Actions 헬스체크를 `/api/health` JSON으로 업그레이드 (버전, 레코드 수, 상태)
+- **도커**: Dockerfile 강화 — 비루트 유저, Procfile과 동일 설정 (timeout 120, workers 2, preload)
+- **도커**: `.dockerignore` 추가 — 빌드 컨텍스트 최적화
+- **의존성**: 전체 패키지 버전 고정 (flask==3.1.* 등) — 업그레이드 시 호환성 보장
+- **문서**: README 기능 테이블 업데이트 (190+ 국가, 정렬/CSV/보안 3개 기능 추가)
+
+---
+
 ## [v2.4.0] - 2026-03-25
 
 ### 🎯 Sortable Columns, Bug Fixes & UX / 정렬 기능, 버그 수정 & UX 개선

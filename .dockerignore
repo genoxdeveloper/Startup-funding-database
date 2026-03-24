@@ -1,0 +1,36 @@
+# Version control
+.git
+.github
+.gitlab-ci.yml
+
+# Python cache
+__pycache__
+*.py[cod]
+*.egg-info
+.mypy_cache
+.pytest_cache
+
+# Database files
+instance/
+*.db
+*.sqlite3
+
+# IDE / Editor
+.vscode
+.idea
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docs and non-essential
+docs/
+*.md
+LICENSE
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+
+# Secrets
+push_repo.py
+.env

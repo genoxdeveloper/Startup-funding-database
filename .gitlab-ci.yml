@@ -1,8 +1,7 @@
 image: python:3.11-slim
 
 stages:
-  - build
-  - test
+  - validate
 
 variables:
   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
@@ -11,15 +10,8 @@ cache:
   paths:
     - .cache/pip
 
-build:
-  stage: build
-  script:
-    - pip install --upgrade pip
-    - pip install -r requirements.txt
-    - echo "Dependencies installed successfully"
-
-test:
-  stage: test
+validate:
+  stage: validate
   script:
     - pip install --upgrade pip
     - pip install -r requirements.txt
@@ -28,5 +20,5 @@ test:
     - python -m py_compile startup_crawler_global.py
     - python -m py_compile data_hyper_scale.py
     - python -m py_compile data_vcs_massive.py
-    - echo "✅ All modules compiled successfully — no syntax errors."
-
+    - python -c "from app import app; print('✅ Flask app imports OK')"
+    - echo "✅ All modules compiled and validated — pipeline PASS."

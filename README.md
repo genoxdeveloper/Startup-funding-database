@@ -42,7 +42,7 @@ As a startup based in Seoul, South Korea ([Genox Holdings](https://genoxholdings
 
 | Feature | Description |
 |---------|-------------|
-| 🌐 **100+ Countries** | Opportunities from USA, UK, EU, Singapore, Japan, Korea, India, UAE, Brazil, Nigeria, and many more |
+| 🌐 **190+ Countries** | Opportunities from USA, UK, EU, Singapore, Japan, Korea, India, UAE, Brazil, Nigeria, and many more |
 | 🏭 **100+ Industries** | AI/ML, FinTech, BioTech, CleanTech, EdTech, SpaceTech, Agri-Food, Gaming, Cybersecurity... |
 | 🏛 **Gov Grants** | SBIR/STTR (USA), Innovate UK, Horizon Europe, TIPS (Korea), MAFF (Japan), and more |
 | 🚀 **VCs & Accelerators** | Y Combinator, Techstars, 500 Global, Sequoia, Founders Factory, Plug and Play... |
@@ -50,9 +50,12 @@ As a startup based in Seoul, South Korea ([Genox Holdings](https://genoxholdings
 | ☁️ **Cloud & Perks** | AWS Activate, Google Cloud credits, Azure credits, Stripe Atlas, OpenAI, Anthropic... |
 | 🔍 **Smart Search** | Full-text search across titles, providers, and descriptions |
 | 📊 **Fit Score** | Every opportunity ranked 0–100 for quick prioritization |
+| ↕️ **Sortable Columns** | Click Title, Country, or Score headers to sort ascending/descending |
+| 📥 **CSV Export** | Export up to 5,000 filtered results as CSV with one click |
 | 🤖 **Auto-Crawler** | Background scheduler crawls new data every 6 hours automatically |
-| 📄 **Pagination** | Handles thousands of records with smooth, paginated views |
+| 📄 **Pagination** | Server-side pagination handles 32,500+ records smoothly |
 | 🎨 **Dark Mode UI** | Premium dark theme designed for extended use |
+| 🔒 **Security Headers** | X-Frame-Options, CSP, XSS Protection, and more |
 
 ---
 

@@ -29,14 +29,18 @@ jobs:
           python -m py_compile startup_crawler_global.py
           python -m py_compile data_hyper_scale.py
           python -m py_compile data_vcs_massive.py
-          echo "✅ All modules validated."
+          python -c "from app import app; print('✅ Flask app imports OK')"
 
       - name: Health Check - Live Site
         run: |
-          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://global-startup-explorerglobal-startup.onrender.com/ || echo "000")
-          echo "Live site HTTP status: $HTTP_CODE"
-          if [ "$HTTP_CODE" = "200" ]; then
-            echo "✅ Live site is healthy."
+          HEALTH=$(curl -s https://global-startup-explorerglobal-startup.onrender.com/api/health || echo '{}')
+          echo "Health response: $HEALTH"
+          STATUS=$(echo "$HEALTH" | python -c "import sys,json; d=json.load(sys.stdin); print(d.get('status','unknown'))" 2>/dev/null || echo "unreachable")
+          RECORDS=$(echo "$HEALTH" | python -c "import sys,json; d=json.load(sys.stdin); print(d.get('records',0))" 2>/dev/null || echo "0")
+          VERSION=$(echo "$HEALTH" | python -c "import sys,json; d=json.load(sys.stdin); print(d.get('version','?'))" 2>/dev/null || echo "?")
+          echo "Status: $STATUS | Records: $RECORDS | Version: $VERSION"
+          if [ "$STATUS" = "ok" ]; then
+            echo "✅ Live site is healthy. v$VERSION with $RECORDS records."
           else
-            echo "⚠️ Live site returned $HTTP_CODE (may be cold-booting on free tier)."
+            echo "⚠️ Site status: $STATUS (may be cold-booting on free tier)."
           fi
