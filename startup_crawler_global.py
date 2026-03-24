@@ -13,9 +13,11 @@ Uses aiohttp for high-concurrency non-blocking I/O.
 import asyncio
 import aiohttp
 import random
-from datetime import datetime
+from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 from models import db, GlobalOpportunity
+
+from data_vcs_massive import get_massive_vcs, get_real_accelerator_branches
 
 URLS = {
     "USA_SBIR": "https://www.sbir.gov/api/solicitations.json",
@@ -60,7 +62,8 @@ async def crawl_usa_and_canada(session):
     # 1.1 USA - SBIR/STTR Data
     data = await fetch_json(session, URLS["USA_SBIR"])
     if data:
-        for item in data[:200]:
+        # Maximizing fetch limit from 200 to all available (often 1000+)
+        for item in data:
             res.append(GlobalOpportunity(
                 title=item.get('solicitation_title', 'SBIR Phase I Grant'),
                 description=f"{item.get('agency')} - {item.get('branch')} (Topic: {item.get('topic_title', 'Tech R&D')})",
@@ -317,6 +320,30 @@ async def crawl_global_accelerators(session):
 # -------------------------------------------------------------------------
 # Execution Engine
 # -------------------------------------------------------------------------
+async def crawl_massive_vcs(session):
+    print("Crawling Massive Real Global VCs & CVCs...")
+    res = []
+    massive_list = get_massive_vcs()
+    for t, d, c, cat, ind, f, eq in massive_list:
+        # Provider usually from the first word
+        prov = t.split(" ")[0] if " " in t else t
+        res.append(GlobalOpportunity(
+            title=t, description=d, country=c, category=cat, 
+            industries=ind, status="Rolling", funding=f, equity=eq, 
+            provider=prov, fit_score=gen_rand_score(90)
+        ))
+        
+    branches_list = get_real_accelerator_branches()
+    for t, d, c, cat, ind, f, eq in branches_list:
+        prov = t.split(" ")[0] if " " in t else t
+        res.append(GlobalOpportunity(
+            title=t, description=d, country=c, category=cat, 
+            industries=ind, status="Rolling", funding=f, equity=eq, 
+            provider=prov, fit_score=gen_rand_score(85)
+        ))
+        
+    return res
+
 async def main_crawler():
     async with aiohttp.ClientSession() as session:
         print("🚀 [GLOBAL 2.0] MASSIVE ENGINE INITIATED...")
@@ -325,7 +352,8 @@ async def main_crawler():
             crawl_europe(session),
             crawl_asia_pacific(session), 
             crawl_mea_latam(session),
-            crawl_global_accelerators(session)
+            crawl_global_accelerators(session),
+            crawl_massive_vcs(session)
         ]
         results = await asyncio.gather(*tasks)
         opportunities = [item for sublist in results for item in sublist]
