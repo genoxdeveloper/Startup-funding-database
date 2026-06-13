@@ -1,6 +1,6 @@
 <div align="center">
 
-#  Awesome Startup Global Explorer
+#  Awesome Awesome Startup Global Explorer Explorer
 
 **Descubra financiación, subvenciones, aceleradoras y ventajas en la nube para startups en más de 188 países y más de 100 industrias.**
 
@@ -19,7 +19,7 @@
 
 ---
 
-Bienvenido a **Awesome Startup Global Explorer**, su puerta de entrada definitiva para navegar por el ecosistema global de startups. Ya sea que sea un fundador en etapa inicial que busca financiación inicial, o una empresa de tecnología en crecimiento que busca subvenciones gubernamentales y VC de primer nivel, esta plataforma centraliza **más de 33,000 oportunidades de financiación en más de 188 países**.
+Bienvenido a **Awesome Awesome Startup Global Explorer Explorer**, su puerta de entrada definitiva para navegar por el ecosistema global de startups. Ya sea que sea un fundador en etapa inicial que busca financiación inicial, o una empresa de tecnología en crecimiento que busca subvenciones gubernamentales y VC de primer nivel, esta plataforma centraliza **más de 33,000 oportunidades de financiación en más de 188 países**.
 
 ![Demo Dashboard](demo_en.png)
 

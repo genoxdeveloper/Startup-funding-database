@@ -1,6 +1,6 @@
 <div align="center">
 
-#  Awesome Startup Global Explorer (全球初创企业资助探索库)
+#  Awesome Awesome Startup Global Explorer Explorer (全球初创企业资助探索库)
 
 **在 188 个以上的国家和 100 多个行业中，探索初创企业资金、政府补助、加速器和云服务支持。**
 
@@ -19,7 +19,7 @@
 
 ---
 
-欢迎使用 **Awesome Startup Global Explorer**！这是您浏览全球初创企业生态系统的终极门户。无论您是寻求种子资金的早期创始人，还是寻找政府补助和顶尖风险投资(VC)的成长型科技公司，该平台汇总了 **188 个国家/地区、超过 33,000 个资金支持机会**。
+欢迎使用 **Awesome Awesome Startup Global Explorer Explorer**！这是您浏览全球初创企业生态系统的终极门户。无论您是寻求种子资金的早期创始人，还是寻找政府补助和顶尖风险投资(VC)的成长型科技公司，该平台汇总了 **188 个国家/地区、超过 33,000 个资金支持机会**。
 
 ![Demo Dashboard](demo_en.png)
 

@@ -2,16 +2,16 @@
 
 ## Supported Versions
 
-Currently, the `main` branch of Startup-Global is supported with security updates.
+Currently, the `main` branch of Awesome Awesome Startup Global Explorer Explorer is supported with security updates.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.0.x   | :white_check_mark: |
-| < 1.0   | :x:                |
+| 1.0.x   |  |
+| < 1.0   |                 |
 
 ## Reporting a Vulnerability
 
-We take the security of Startup-Global and the data of founders and investors extremely seriously. 
+We take the security of Awesome Awesome Startup Global Explorer Explorer and the data of founders and investors extremely seriously. 
 
 If you discover any security vulnerabilities, please do NOT report them through public GitHub issues. Instead, please email our security team directly:
 

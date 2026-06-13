@@ -1,6 +1,6 @@
-# Contributing to Startup-Global
+# Contributing to Awesome Awesome Startup Global Explorer Explorer
 
-First off, thank you for considering contributing to Startup-Global! It's people like you that make this global ecosystem possible.
+First off, thank you for considering contributing to Awesome Awesome Startup Global Explorer Explorer! It's people like you that make this global ecosystem possible.
 
 ## How Can I Contribute?
 

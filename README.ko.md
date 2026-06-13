@@ -1,6 +1,6 @@
 <div align="center">
 
-#  Awesome Startup Global Explorer (스타트업 글로벌 익스플로러)
+#  Awesome Awesome Startup Global Explorer Explorer (스타트업 글로벌 익스플로러)
 
 **전 세계 188개국, 100개 이상의 산업군에 걸친 정부 지원금, VC, 액셀러레이터, 클라우드 지원 프로그램을 탐색하세요.**
 
@@ -19,7 +19,7 @@
 
 ---
 
-**Awesome Startup Global Explorer**에 오신 것을 환영합니다! 시드 자금이 필요한 초기 창업자부터 해외 진출과 대규모 정부 지원금을 찾는 스케일업 스타트업까지, **188개국 33,000개 이상의 글로벌 지원 기회**를 한 곳에서 찾아볼 수 있는 통합 플랫폼입니다.
+**Awesome Awesome Startup Global Explorer Explorer**에 오신 것을 환영합니다! 시드 자금이 필요한 초기 창업자부터 해외 진출과 대규모 정부 지원금을 찾는 스케일업 스타트업까지, **188개국 33,000개 이상의 글로벌 지원 기회**를 한 곳에서 찾아볼 수 있는 통합 플랫폼입니다.
 
 ![Demo Dashboard](demo_ko.png)
 

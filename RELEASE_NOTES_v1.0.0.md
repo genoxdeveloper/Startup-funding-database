@@ -1,6 +1,6 @@
-# Startup Global v1.0.0
+# Awesome Startup Global Explorer v1.0.0
 
-The highly anticipated open-source release of **Startup Global**.
+The highly anticipated open-source release of **Awesome Startup Global Explorer**.
 
 ## Key Features
 

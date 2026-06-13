@@ -1,6 +1,6 @@
 <div align="center">
 
-#  Awesome Startup Global Explorer
+#  Awesome Awesome Startup Global Explorer Explorer
 
 **Discover startup funding, grants, accelerators & cloud perks across 188+ countries and 100+ industries.**
 
@@ -19,7 +19,7 @@
 
 ---
 
-Welcome to **Awesome Startup Global Explorer**, your ultimate gateway to navigating the global startup ecosystem. Whether you're an early-stage founder seeking seed funding, or a scaling tech company looking for government grants and top-tier VCs, this platform centralizes **33,000+ funding opportunities across 188+ countries**.
+Welcome to **Awesome Awesome Startup Global Explorer Explorer**, your ultimate gateway to navigating the global startup ecosystem. Whether you're an early-stage founder seeking seed funding, or a scaling tech company looking for government grants and top-tier VCs, this platform centralizes **33,000+ funding opportunities across 188+ countries**.
 
 ![Demo Dashboard](demo_en.png)
 
