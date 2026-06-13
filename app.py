@@ -8,6 +8,7 @@ import os
 import threading
 import secrets
 import logging
+import urllib.parse
 from functools import lru_cache
 from concurrent.futures import ThreadPoolExecutor
 from deep_translator import GoogleTranslator
@@ -316,70 +317,14 @@ def api_data():
         for idx, r in enumerate(results):
             # Build a safe apply URL — never show fake apply.genox.one links
             raw_url = r.url or ''
-            if raw_url and 'apply.genox.one' not in raw_url:
+            if raw_url and 'apply.genox.one' not in raw_url and raw_url != '#':
                 apply_url = raw_url
             else:
-                # Use real portal per country
-                portals = {
-                    # Asia Pacific
-                    'South Korea': 'https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do',
-                    'Japan': 'https://j-net21.smrj.go.jp/startup/index.html',
-                    'India': 'https://www.startupindia.gov.in/content/sih/en/government_schemes.html',
-                    'Singapore': 'https://www.enterprisesg.gov.sg/financial-assistance',
-                    'Australia': 'https://business.gov.au/grants-and-programs',
-                    'New Zealand': 'https://www.callaghaninnovation.govt.nz/grants',
-                    'China': 'https://innofund.most.gov.cn/',
-                    'Taiwan': 'https://startup.sme.gov.tw/',
-                    'Hong Kong': 'https://www.hkstp.org/our-programmes/',
-                    'Indonesia': 'https://startup.hub.id/',
-                    'Thailand': 'https://www.nia.or.th/',
-                    'Vietnam': 'https://www.startup.gov.vn/',
-                    'Malaysia': 'https://www.mdec.my/digital-economy-initiatives',
-                    'Philippines': 'https://dict.gov.ph/startup-grant-fund/',
-                    # Europe
-                    'UK': 'https://www.gov.uk/business-finance-support',
-                    'Germany': 'https://www.foerderdatenbank.de/FDB/DE/Foerderprogramme/foerderprogramme.html',
-                    'France': 'https://www.bpifrance.fr/nos-offres',
-                    'Netherlands': 'https://www.rvo.nl/subsidies-financiering',
-                    'Sweden': 'https://www.vinnova.se/en/apply-for-funding/',
-                    'Finland': 'https://www.businessfinland.fi/en/do-business-with-finland/funding',
-                    'Denmark': 'https://www.innovationsfonden.dk/en/apply',
-                    'Norway': 'https://www.innovasjonnorge.no/en/',
-                    'Estonia': 'https://eas.ee/en/apply-for-funding/',
-                    'Spain': 'https://www.cdti.es/index.asp?idIdioma=2',
-                    'Italy': 'https://www.mise.gov.it/',
-                    'Switzerland': 'https://www.innosuisse.ch/inno/en/home.html',
-                    'EU': 'https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home',
-                    'Israel': 'https://innovationisrael.org.il/en/program/',
-                    # Americas
-                    'USA': 'https://www.sbir.gov/solicitations',
-                    'Canada': 'https://innovation.ised-isde.canada.ca/innovation/s/?language=en_CA',
-                    'Brazil': 'https://www.bndes.gov.br/wps/portal/site/home/financiamento',
-                    'Mexico': 'https://www.inadem.gob.mx/',
-                    'Chile': 'https://www.corfo.cl/sites/cpp/home',
-                    'Colombia': 'https://www.innpulsa.gov.co/',
-                    'Argentina': 'https://www.argentina.gob.ar/produccion/sepyme',
-                    # MEA
-                    'UAE': 'https://hub71.com/apply/',
-                    'Saudi Arabia': 'https://www.monsha.at.gov.sa/',
-                    'South Africa': 'https://www.seda.org.za/funding-support/',
-                    'Nigeria': 'https://tonyelumelufoundation.org/teep/application/',
-                    'Kenya': 'https://www.ilab.co.ke/',
-                    'Ghana': 'https://mest.co/apply/',
-                    'Egypt': 'https://www.itida.gov.eg/',
-                    'Zimbabwe': 'https://www.zimtrade.co.zw/',
-                    'Zambia': 'https://www.zda.org.zm/',
-                    'Tanzania': 'https://www.costech.or.tz/',
-                    'Uganda': 'https://www.tic.co.ug/',
-                    'Rwanda': 'https://risa.rw/',
-                    'Ethiopia': 'https://www.ethiopianembassy.org/investment',
-                    'Morocco': 'https://www.maroc.ma/',
-                    'Tunisia': 'https://www.startup.gov.tn/',
-                    # Default
-                    'Global': 'https://www.f6s.com/programs',
-                }
-                country_key = r.country or 'Global'
-                apply_url = portals.get(country_key, f'https://www.google.com/search?q={r.title.replace(" ", "+")}')
+                # Fallback to a highly specific Google Search instead of generic portals
+                # Combining Title, Provider, and Country to ensure an exact match
+                search_query = f"{r.title} {r.provider or ''} {r.country or ''}".strip()
+                safe_query = urllib.parse.quote_plus(search_query)
+                apply_url = f"https://www.google.com/search?q={safe_query}"
 
             filtered.append({
                 "title": r.title,
