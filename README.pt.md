@@ -4,7 +4,9 @@
 
 **Discover startup funding, grants, accelerators & cloud perks across 188+ countries and 100+ industries.**
 
-### 🚀 Live Explorer: [https://startup-global.vercel.app/](https://startup-global.vercel.app/)
+### 🚀 Live Explorer: 
+
+[https://startup-global.vercel.app/](https://startup-global.vercel.app/)
 
 <br>
 
@@ -23,8 +25,12 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
 [**English**](README.md) | [**한국어**](README.ko.md) | [**中文 (简体)**](README.zh_Hans.md) | [**中文 (繁體)**](README.zh_Hant.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md) | [**Deutsch**](README.de.md) | [**Français**](README.fr.md) | [**हिन्दी**](README.hi.md) | [**Bahasa Indonesia**](README.id.md) | [**Italiano**](README.it.md) | [**日本語**](README.ja.md) | [**Português**](README.pt.md) | [**Русский**](README.ru.md) | [**ไทย**](README.th.md) | [**Türkçe**](README.tr.md) | [**Tiếng Việt**](README.vi.md)
 
-*Built for startups, by a startup in Seoul, South Korea*  
-*An open-source project by**[Genox](https://genoxholdings.com)**&**[Buygit.com](https://buygit.com)***
+*Built for startups, by a startup in
+
+Seoul, South Korea*  
+
+*An open-source project by
+**[Genox](https://genoxholdings.com)**&**[Buygit.com](https://buygit.com)***
 
 </div>
 
@@ -142,14 +148,10 @@ Se este projeto foi útil para você ou sua startup, considere nos apoiar! Seu a
 |----------|------|
 | ⭐**Star this repo**| It's free and helps others discover this tool! |
 | 🤝**Buygit.com**| Check out our partner [Buygit.com](https://buygit.com) |
-| 💼**GitHub Sponsors**| [Sponsor Genox-developer](https://github.com/sponsors/genoxdeveloper) |
-| ☕**Ko-fi**         | [ko-fi.com/genoxholdings](https://ko-fi.com/genoxholdings) |
+| 💼**GitHub Sponsors**| [Sponsor Genox-developer](https://github.com/sponsors/genoxdeveloper) 
 | 🪙**USDT (TRC20)**  | `TUmUVHfxsFLZQToE5j4oGaPCMRKBLRjEcv` |
 
 </div>
-
->**Compre um café para nós**— cada xícara nos ajuda a rastrear mais uma fonte de dados!  
->**Compre uma pizza para nós**— e adicionaremos os programas de startups do seu país a seguir!
 
 Seu apoio, seja uma estrela, um compartilhamento nas redes sociais ou uma pequena doação, ajuda muito a manter este projeto vivo e gratuito para todos.
 
@@ -161,7 +163,7 @@ Aceitamos contribuições de fundadores e desenvolvedores de todo o mundo! Se vo
 ## 📬 Contato
 
 Para dúvidas, consultas comerciais ou propostas de parceria:
--**E-mail**: [developer@genox.one](mailto:developer@genox.one)  
+-**E-mail**: [admin@genox.one](mailto:admin@genox.one) [support@buygit.com](mailto:support@buygit.com)
 -**Site**: [genoxholdings.com](https://genoxholdings.com)
 -**Parceiro**: [buygit.com](https://buygit.com)
 

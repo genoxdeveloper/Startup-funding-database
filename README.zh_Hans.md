@@ -4,7 +4,9 @@
 
 **Discover startup funding, grants, accelerators & cloud perks across 188+ countries and 100+ industries.**
 
-### 🚀 Live Explorer: [https://startup-global.vercel.app/](https://startup-global.vercel.app/)
+### 🚀 Live Explorer: 
+
+[https://startup-global.vercel.app/](https://startup-global.vercel.app/)
 
 <br>
 
@@ -23,8 +25,12 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
 [**English**](README.md) | [**한국어**](README.ko.md) | [**中文 (简体)**](README.zh_Hans.md) | [**中文 (繁體)**](README.zh_Hant.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md) | [**Deutsch**](README.de.md) | [**Français**](README.fr.md) | [**हिन्दी**](README.hi.md) | [**Bahasa Indonesia**](README.id.md) | [**Italiano**](README.it.md) | [**日本語**](README.ja.md) | [**Português**](README.pt.md) | [**Русский**](README.ru.md) | [**ไทย**](README.th.md) | [**Türkçe**](README.tr.md) | [**Tiếng Việt**](README.vi.md)
 
-*Built for startups, by a startup in Seoul, South Korea*  
-*An open-source project by**[Genox](https://genoxholdings.com)**&**[Buygit.com](https://buygit.com)***
+*Built for startups, by a startup in
+
+Seoul, South Korea*  
+
+*An open-source project by
+**[Genox](https://genoxholdings.com)**&**[Buygit.com](https://buygit.com)***
 
 </div>
 
@@ -142,14 +148,10 @@
 |----------|------|
 | ⭐**Star this repo**| It's free and helps others discover this tool! |
 | 🤝**Buygit.com**| Check out our partner [Buygit.com](https://buygit.com) |
-| 💼**GitHub Sponsors**| [Sponsor Genox-developer](https://github.com/sponsors/genoxdeveloper) |
-| ☕**Ko-fi**         | [ko-fi.com/genoxholdings](https://ko-fi.com/genoxholdings) |
+| 💼**GitHub Sponsors**| [Sponsor Genox-developer](https://github.com/sponsors/genoxdeveloper) 
 | 🪙**USDT (TRC20)**  | `TUmUVHfxsFLZQToE5j4oGaPCMRKBLRjEcv` |
 
 </div>
-
->**请我们喝一杯咖啡**— 每一杯咖啡都可以帮助我们多抓取一个数据源！  
->**给我们买个披萨**— 接下来我们将添加您所在国家/地区的创业计划！
 
 您的支持，无论是明星、社交媒体上的分享，还是小额捐款，都对保持这个项目的活力和免费为每个人大有帮助。
 
@@ -161,7 +163,7 @@
 ## 📬 联系方式
 
 如有疑问、业务咨询或合作建议：
--**电子邮件**：[developer@genox.one](mailto:developer@genox.one)  
+-**电子邮件**：[admin@genox.one](mailto:admin@genox.one) [support@buygit.com](mailto:support@buygit.com)
 -**网站**：[genoxholdings.com](https://genoxholdings.com)
 -**合作伙伴**：[buygit.com](https://buygit.com)
 

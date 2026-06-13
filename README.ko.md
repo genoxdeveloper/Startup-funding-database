@@ -4,7 +4,9 @@
 
 **Discover startup funding, grants, accelerators & cloud perks across 188+ countries and 100+ industries.**
 
-### 🚀 Live Explorer: [https://startup-global.vercel.app/](https://startup-global.vercel.app/)
+### 🚀 Live Explorer: 
+
+[https://startup-global.vercel.app/](https://startup-global.vercel.app/)
 
 <br>
 
@@ -23,8 +25,12 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
 [**English**](README.md) | [**한국어**](README.ko.md) | [**中文 (简体)**](README.zh_Hans.md) | [**中文 (繁體)**](README.zh_Hant.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md) | [**Deutsch**](README.de.md) | [**Français**](README.fr.md) | [**हिन्दी**](README.hi.md) | [**Bahasa Indonesia**](README.id.md) | [**Italiano**](README.it.md) | [**日本語**](README.ja.md) | [**Português**](README.pt.md) | [**Русский**](README.ru.md) | [**ไทย**](README.th.md) | [**Türkçe**](README.tr.md) | [**Tiếng Việt**](README.vi.md)
 
-*Built for startups, by a startup in Seoul, South Korea*  
-*An open-source project by**[Genox](https://genoxholdings.com)**&**[Buygit.com](https://buygit.com)***
+*Built for startups, by a startup in
+
+Seoul, South Korea*  
+
+*An open-source project by
+**[Genox](https://genoxholdings.com)**&**[Buygit.com](https://buygit.com)***
 
 </div>
 
@@ -142,14 +148,10 @@
 |----------|------|
 | ⭐**Star this repo**| It's free and helps others discover this tool! |
 | 🤝**Buygit.com**| Check out our partner [Buygit.com](https://buygit.com) |
-| 💼**GitHub Sponsors**| [Sponsor Genox-developer](https://github.com/sponsors/genoxdeveloper) |
-| ☕**Ko-fi**         | [ko-fi.com/genoxholdings](https://ko-fi.com/genoxholdings) |
+| 💼**GitHub Sponsors**| [Sponsor Genox-developer](https://github.com/sponsors/genoxdeveloper) 
 | 🪙**USDT (TRC20)**  | `TUmUVHfxsFLZQToE5j4oGaPCMRKBLRjEcv` |
 
 </div>
-
->**커피 한 잔 사주세요**— 커피 한 잔은 데이터 소스를 하나 더 크롤링하는 데 도움이 됩니다!  
->**우리에게 피자를 사주세요**— 그러면 다음으로 귀하 국가의 스타트업 프로그램을 추가해 드리겠습니다!
 
 스타, 소셜 미디어 공유, 소액 기부 등 여러분의 지원은 이 프로젝트를 모든 사람에게 무료로 유지하는 데 큰 도움이 됩니다.
 
@@ -161,7 +163,7 @@
 ## 📬연락처
 
 질문, 비즈니스 문의 또는 파트너십 제안의 경우:
--**이메일**: [developer@genox.one](mailto:developer@genox.one)  
+-**이메일**: [admin@genox.one](mailto:admin@genox.one) [support@buygit.com](mailto:support@buygit.com)
 -**웹사이트**: [genoxholdings.com](https://genoxholdings.com)
 -**파트너**: [buygit.com](https://buygit.com)
 
