@@ -9,8 +9,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
-
-[**English**](README.md) | [**한국어**](README.ko.md) | [**中文**](README.zh_Hans.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md)
+[**English**](README.md) | [**한국어**](README.ko.md) | [**中文 (简体)**](README.zh_Hans.md) | [**中文 (繁體)**](README.zh_Hant.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md) | [**Deutsch**](README.de.md) | [**Français**](README.fr.md) | [**हिन्दी**](README.hi.md) | [**Bahasa Indonesia**](README.id.md) | [**Italiano**](README.it.md) | [**日本語**](README.ja.md) | [**Português**](README.pt.md) | [**Русский**](README.ru.md) | [**ไทย**](README.th.md) | [**Türkçe**](README.tr.md) | [**Tiếng Việt**](README.vi.md)
 
 *Built for startups, by a startup in Seoul, South Korea*  
 *An open-source project by**[Genox](https://genoxholdings.com)**&**[Buygit.com](https://buygit.com)***
@@ -46,10 +45,21 @@ Reconocemos que el próximo gran unicornio podría venir de cualquier parte. Sin
 
 Con un solo clic en nuestra barra de navegación superior, puede traducir sin problemas toda la plataforma, incluidas las**más de 35 000 descripciones de programas, criterios y entradas dinámicas de bases de datos profundamente anidadas**, a:
 - 🇺🇸**Inglés**(predeterminado universal)
-- 🇰🇷**한국어 (coreano)**(centros de Asia y el Pacífico)
-- 🇨🇳**中文 (chino)**(ecosistemas de la Gran China y el MAR)
-- 🇪🇸**Español (Español)**(Mercados latinoamericanos e ibéricos en auge)
-- 🇦🇪**العربية (árabe)**(ecosistema de startups de MENA en rápido crecimiento)
+- 🇰🇷**한국어 (coreano)**
+- 🇨🇳**中文 (chino simplificado)**y 🇹🇼**繁體中文 (chino tradicional)**
+- 🇪🇸**Español (Español)**
+- 🇦🇪**العربية (árabe)**
+- 🇩🇪**Deutsch (alemán)**
+- 🇫🇷**Français (francés)**
+- 🇮🇳**हिन्दी (hindi)**
+- 🇮🇩**Bahasa Indonesia (indonesio)**
+- 🇮🇹**Italiano (italiano)**
+- 🇯🇵**日本語 (japonés)**
+- 🇵🇹**Português (portugués)**
+- 🇷🇺**Русский (ruso)**
+- 🇹🇭**ไทย (tailandés)**
+- 🇹🇷**Türkçe (turco)**
+- 🇻🇳**Tiếng Việt (vietnamita)**
 *(¡Y trabajamos continuamente para agregar más!)*
 
 **¿Por qué es esto revolucionario?**

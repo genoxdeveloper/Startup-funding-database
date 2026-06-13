@@ -9,8 +9,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
-
-[**English**](README.md) | [**한국어**](README.ko.md) | [**中文**](README.zh_Hans.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md)
+[**English**](README.md) | [**한국어**](README.ko.md) | [**中文 (简体)**](README.zh_Hans.md) | [**中文 (繁體)**](README.zh_Hant.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md) | [**Deutsch**](README.de.md) | [**Français**](README.fr.md) | [**हिन्दी**](README.hi.md) | [**Bahasa Indonesia**](README.id.md) | [**Italiano**](README.it.md) | [**日本語**](README.ja.md) | [**Português**](README.pt.md) | [**Русский**](README.ru.md) | [**ไทย**](README.th.md) | [**Türkçe**](README.tr.md) | [**Tiếng Việt**](README.vi.md)
 
 *Built for startups, by a startup in Seoul, South Korea*  
 *An open-source project by**[Genox](https://genoxholdings.com)**&**[Buygit.com](https://buygit.com)***
@@ -46,10 +45,21 @@
 
 بنقرة واحدة على شريط التنقل العلوي لدينا، يمكنك بسهولة ترجمة النظام الأساسي بأكمله - بما في ذلك جميع**35000+ أوصاف البرامج المتداخلة بعمق والمعايير وإدخالات قاعدة البيانات الديناميكية**- إلى:
 - 🇺🇸**الإنجليزية**(الافتراضي العالمي)
-- 🇰🇷**한국어 (الكورية)**(مراكز آسيا والمحيط الهادئ)
-- 🇨🇳**中文 (الصينية)**(النظم البيئية في الصين الكبرى وجنوب شرق آسيا)
-- 🇪🇸**Español (الإسبانية)**(أسواق أمريكا اللاتينية والأيبيرية المزدهرة)
-- 🇦🇪**العربية (العربية)**(نظام الشركات الناشئة سريع النمو في منطقة الشرق الأوسط وشمال أفريقيا)
+- 🇰🇷**한국어 (الكورية)**
+- 🇨🇳**中文 (الصينية المبسطة)**و 🇹🇼**繁體中文 (الصينية التقليدية)**
+- 🇪🇸**الإسبانية (الإسبانية)**
+- 🇦🇪**العربية (العربية)**
+- 🇩🇪**الألمانية (الألمانية)**
+- 🇫🇷**الفرنسية (الفرنسية)**
+- 🇮🇳**هيندي (هندية)**
+- 🇮🇩**البهاسا الإندونيسية (الإندونيسية)**
+- 🇮🇹**الإيطالية (الإيطالية)**
+- 🇯🇵**日本語 (اليابانية)**
+- 🇵🇹**البرتغالية (البرتغالية)**
+- 🇷🇺**Русский (الروسية)**
+- 🇹🇭**ไทย (التايلاندية)**
+- 🇹🇷**Türkçe (التركية)**
+- 🇻🇳**تينغ فيت (الفيتنامية)**
 *(ونعمل باستمرار على إضافة المزيد!)*
 
 **لماذا هذه الثورة؟**

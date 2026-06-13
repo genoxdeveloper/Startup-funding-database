@@ -9,8 +9,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
-
-[**English**](README.md) | [**한국어**](README.ko.md) | [**中文**](README.zh_Hans.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md)
+[**English**](README.md) | [**한국어**](README.ko.md) | [**中文 (简体)**](README.zh_Hans.md) | [**中文 (繁體)**](README.zh_Hant.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md) | [**Deutsch**](README.de.md) | [**Français**](README.fr.md) | [**हिन्दी**](README.hi.md) | [**Bahasa Indonesia**](README.id.md) | [**Italiano**](README.it.md) | [**日本語**](README.ja.md) | [**Português**](README.pt.md) | [**Русский**](README.ru.md) | [**ไทย**](README.th.md) | [**Türkçe**](README.tr.md) | [**Tiếng Việt**](README.vi.md)
 
 *Built for startups, by a startup in Seoul, South Korea*  
 *An open-source project by **[Genox](https://genoxholdings.com)** & **[Buygit.com](https://buygit.com)***
@@ -46,10 +45,21 @@ We recognize that the next big unicorn could come from anywhere. However, the gl
 
 With a single click on our top navigation bar, you can seamlessly translate the entire platform—including all **35,000+ deeply nested program descriptions, criteria, and dynamic database entries**—into:
 - 🇺🇸 **English** (Universal Default)
-- 🇰🇷 **한국어 (Korean)** (Asia-Pacific Hubs)
-- 🇨🇳 **中文 (Chinese)** (Greater China & SEA ecosystems)
-- 🇪🇸 **Español (Spanish)** (Booming LatAm & Iberian markets)
-- 🇦🇪 **العربية (Arabic)** (Rapidly growing MENA startup ecosystem)
+- 🇰🇷 **한국어 (Korean)**
+- 🇨🇳 **中文 (Simplified Chinese)** & 🇹🇼 **繁體中文 (Traditional Chinese)**
+- 🇪🇸 **Español (Spanish)**
+- 🇦🇪 **العربية (Arabic)**
+- 🇩🇪 **Deutsch (German)**
+- 🇫🇷 **Français (French)**
+- 🇮🇳 **हिन्दी (Hindi)**
+- 🇮🇩 **Bahasa Indonesia (Indonesian)**
+- 🇮🇹 **Italiano (Italian)**
+- 🇯🇵 **日本語 (Japanese)**
+- 🇵🇹 **Português (Portuguese)**
+- 🇷🇺 **Русский (Russian)**
+- 🇹🇭 **ไทย (Thai)**
+- 🇹🇷 **Türkçe (Turkish)**
+- 🇻🇳 **Tiếng Việt (Vietnamese)**
 *(And we are continuously working to add more!)*
 
 **Why is this revolutionary?**

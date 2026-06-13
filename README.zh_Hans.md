@@ -9,8 +9,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
-
-[**English**](README.md) | [**한국어**](README.ko.md) | [**中文**](README.zh_Hans.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md)
+[**English**](README.md) | [**한국어**](README.ko.md) | [**中文 (简体)**](README.zh_Hans.md) | [**中文 (繁體)**](README.zh_Hant.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md) | [**Deutsch**](README.de.md) | [**Français**](README.fr.md) | [**हिन्दी**](README.hi.md) | [**Bahasa Indonesia**](README.id.md) | [**Italiano**](README.it.md) | [**日本語**](README.ja.md) | [**Português**](README.pt.md) | [**Русский**](README.ru.md) | [**ไทย**](README.th.md) | [**Türkçe**](README.tr.md) | [**Tiếng Việt**](README.vi.md)
 
 *Built for startups, by a startup in Seoul, South Korea*  
 *An open-source project by**[Genox](https://genoxholdings.com)**&**[Buygit.com](https://buygit.com)***
@@ -46,10 +45,21 @@
 
 只需单击我们的顶部导航栏，您就可以将整个平台（包括所有**35,000 多个深度嵌套的程序描述、标准和动态数据库条目**）无缝转换为：
 - 🇺🇸**英语**（通用默认）
-- 🇰🇷**한국어（韩语）**（亚太中心）
-- 🇨🇳**中文（中文）**（大中华区和东南亚生态系统）
-- 🇪🇸**Español（西班牙语）**（蓬勃发展的拉丁美洲和伊比利亚市场）
-- 🇦🇪**??????（阿拉伯语）**（快速发展的中东和北非初创生态系统）
+- 🇰🇷**한국어（韩语）**
+- 🇨🇳**中文（简体中文）**和 🇹🇼**繁体中文（繁体中文）**
+- 🇪🇸**Español（西班牙语）**
+- 🇦🇪**??????（阿拉伯语）**
+- 🇩🇪**德语（德语）**
+- 🇫🇷**Français（法语）**
+- 🇮🇳**हिन्दी（印地语）**
+- 🇮🇩**印度尼西亚语（印度尼西亚语）**
+- 🇮🇹**意大利语（意大利语）**
+- 🇯🇵**日本语（日语）**
+- 🇵🇹**Português（葡萄牙语）**
+- 🇷🇺**Русский（俄语）**
+- 🇹🇭**ไทย（泰语）**
+- 🇹🇷**Türkçe（土耳其语）**
+- 🇻🇳**Tiếng Việt（越南语）**
 *（我们正在不断努力添加更多！）*
 
 **为什么这是革命性的？**

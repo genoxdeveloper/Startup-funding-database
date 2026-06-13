@@ -9,8 +9,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
-
-[**English**](README.md) | [**한국어**](README.ko.md) | [**中文**](README.zh_Hans.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md)
+[**English**](README.md) | [**한국어**](README.ko.md) | [**中文 (简体)**](README.zh_Hans.md) | [**中文 (繁體)**](README.zh_Hant.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md) | [**Deutsch**](README.de.md) | [**Français**](README.fr.md) | [**हिन्दी**](README.hi.md) | [**Bahasa Indonesia**](README.id.md) | [**Italiano**](README.it.md) | [**日本語**](README.ja.md) | [**Português**](README.pt.md) | [**Русский**](README.ru.md) | [**ไทย**](README.th.md) | [**Türkçe**](README.tr.md) | [**Tiếng Việt**](README.vi.md)
 
 *Built for startups, by a startup in Seoul, South Korea*  
 *An open-source project by**[Genox](https://genoxholdings.com)**&**[Buygit.com](https://buygit.com)***
@@ -46,10 +45,21 @@
 
 상단 탐색 모음을 한 번만 클릭하면**35,000개 이상의 깊게 중첩된 프로그램 설명, 기준 및 동적 데이터베이스 항목**을 포함하여 전체 플랫폼을 다음으로 원활하게 변환할 수 있습니다.
 - 🇺🇸**영어**(범용 기본값)
-- instagram**한국어(한국어)**(아시아 태평양 허브)
-- 🇨🇳**中文(중국어)**(중화권 및 SEA 생태계)
-- 🇪🇸**Español(스페인어)**(호황을 누리고 있는 라틴 아메리카 및 이베리아 시장)
-- 🇦🇪**العربية (아랍어)**(빠르게 성장하는 MENA 스타트업 생태계)
+- instagram**한국어(한국어)**
+- 🇨🇳**中文(중국어 간체)**및 🇹🇼**繁體中文(중국어 번체)**
+- 🇪🇸**Español(스페인어)**
+- 🇦🇪**العربية(아랍어)**
+- 🇩🇪**Deutsch(독일어)**
+- 🇫🇷**프랑스어(프랑스어)**
+- 🇮🇳**힌디어(힌디어)**
+- 🇮🇩**인도네시아어(인도네시아어)**
+- 🇮🇹**이탈리아노(이탈리아어)**
+- 🇯🇵**일본어(일본어)**
+- 🇵🇹**Português(포르투갈어)**
+- 🇷🇺**Русский(러시아어)**
+- 🇹🇭**ไทม(태국어)**
+- 🇹🇷**터키어(터키어)**
+- 🇻🇳**Tiếng Viet(베트남어)**
 *(그리고 우리는 계속해서 더 많은 것을 추가하기 위해 노력하고 있습니다!)*
 
 **이것이 왜 혁명적인가?**
