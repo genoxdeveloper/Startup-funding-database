@@ -1,6 +1,6 @@
 <div align="center">
 
-#  Awesome Awesome Startup Global Explorer Explorer
+# Awesome Startup Global Explorer
 
 **Discover startup funding, grants, accelerators & cloud perks across 188+ countries and 100+ industries.**
 
@@ -12,56 +12,12 @@
 
 [**English**](README.md) | [**한국어**](README.ko.md) | [**中文**](README.zh_Hans.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md)
 
-*Built for startups, by a startup in Seoul, South Korea *  
+*Built for startups, by a startup in Seoul, South Korea*  
 *An open-source project by [Genox Holdings](https://genoxholdings.com)*
 
 </div>
 
 ---
-
-Welcome to **Awesome Awesome Startup Global Explorer Explorer**, your ultimate gateway to navigating the global startup ecosystem. Whether you're an early-stage founder seeking seed funding, or a scaling tech company looking for government grants and top-tier VCs, this platform centralizes **33,000+ funding opportunities across 188+ countries**.
-
-![Demo Dashboard](demo_en.png)
-
-##  Why We Built This
-
-As a startup based in Seoul, South Korea ([Genox Holdings](https://genoxholdings.com)), we spent countless hours scouring government portals, VC databases, and accelerator sites across dozens of countries. We built this tool internally first, and now we're open-sourcing it because **every founder deserves access to global opportunities**, not just those in Silicon Valley.
-
-##  What Does This Site Let You Do?
-
-Finding the right funding or support program can be overwhelming, especially when looking across borders. This application solves that by doing the heavy lifting for you:
-
-### 1.  **Discover Global Funding Instantly**
-Explore a massive, continuously updated database of:
-- **Government Grants** (e.g., SBIR in the US, Innovate UK, K-Startup in Korea, Horizon Europe)
-- **VCs & Accelerators** (Y Combinator, Techstars, 500 Global, and thousands of regional micro-VCs)
-- **Corporate Open Innovation (OI)** programs
-- **Cloud Credits & Perks** (AWS Activate, Google for Startups)
-- **Relocation & Growth** initiatives (Startup Visas, Tech Hub Residencies)
-
-### 2.  **Smart "Relevance Score" Ranking**
-Not all programs are created equal. Our custom `fit_score` algorithm evaluates opportunities and automatically bubbles up the highest-tier, most active programs to the top, so you don't waste time scrolling through dead links.
-
-### 3.  **Native Multi-Language Support**
-Startup ecosystems shouldn't be gated by language barriers. With a single click on our top navigation bar, you can seamlessly translate the entire platform and all 33,000+ program descriptions into:
-- **English** | **한국어 (Korean)** | **中文 (Chinese)** | **Español (Spanish)** | **العربية (Arabic)** 
-*(And many more!)*
-
-![Korean View Demo](demo_ko.png)
-
-### 4.  **Powerful Filtering & Search**
-Need a FinTech grant in LatAm? Or an AI accelerator in Asia? Use the intuitive UI to filter by:
-- **Country / Region** (188+ specific countries or "Global" remote programs)
-- **Category** (Gov Grants, VCs, Corporate, etc.)
-- **Industry** (AI, FinTech, SaaS, DeepTech, HealthTech, Web3, CleanTech, etc.)
-- **Deadline** (Rolling vs. Fixed Deadlines)
-
-### 5.  **Direct "Apply" Portals**
-When you find the perfect match, click "Apply" to be taken *directly* to the official application portal or national grant database (e.g., `sbir.gov`, `bpifrance.fr`, `enterprisesg.gov.sg`).
-
----
-
-##  Technical Stack & Architecture
 
 - **Backend:** Python (Flask, SQLAlchemy)
 - **Database:** SQLite (Hyper-scalable single-transaction bulk updates)

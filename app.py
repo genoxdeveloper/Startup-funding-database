@@ -6,11 +6,16 @@ import csv
 import io
 import os
 import threading
+import secrets
+import logging
 from functools import lru_cache
 from concurrent.futures import ThreadPoolExecutor
 from deep_translator import GoogleTranslator
+from flask import request
 from models import db, GlobalOpportunity, init_db
 from startup_crawler_global import run_crawler_and_save
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 @lru_cache(maxsize=5000)
 def translate_title(text, target_lang):
@@ -28,7 +33,8 @@ def translate_title(text, target_lang):
         lang_map = {'zh_Hans': 'zh-CN', 'zh_Hant': 'zh-TW', 'ja': 'ja', 'ko': 'ko'}
         t_lang = lang_map.get(target_lang, target_lang.split('_')[0])
         return GoogleTranslator(source='auto', target=t_lang).translate(text)
-    except:
+    except Exception as e:
+        logging.warning(f"Translation failed for '{text}': {e}")
         return text
 
 app = Flask(__name__)
@@ -41,7 +47,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', f'sqlite:
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 app.config['BABEL_SUPPORTED_LOCALES'] = ['en', 'ko', 'ja', 'zh_Hans', 'zh_Hant', 'es', 'fr', 'de', 'it', 'pt', 'ar', 'hi', 'ru', 'tr', 'id', 'vi', 'th']
-app.secret_key = os.environ.get('SECRET_KEY', 'default-insecure-secret-key')
+app.secret_key = os.environ.get('SECRET_KEY', secrets.token_hex(32))
 
 def get_locale():
     return request.args.get('lang') or session.get('lang') or 'en'
@@ -74,14 +80,14 @@ def cleanup_old_records():
             GlobalOpportunity.created_at < cutoff
         ).count()
         if old_count > 0:
-            GlobalOpportunity.query.filter(
+            db.session.delete(GlobalOpportunity.query.filter(
                 GlobalOpportunity.created_at.isnot(None),
                 GlobalOpportunity.created_at < cutoff
-            ).delete(synchronize_session=False)
+            ))
             db.session.commit()
-            print(f"🗑️  Cleaned up {old_count} records older than 3 months (before {cutoff.strftime('%Y-%m-%d')})")
+            logging.info(f"Cleaned up {old_count} records older than 3 months (before {cutoff.strftime('%Y-%m-%d')})")
         else:
-            print("✅ No records older than 3 months. Nothing to clean up.")
+            logging.info("No records older than 3 months. Nothing to clean up.")
 
 # ---------------------------------------------------------------------------
 # Initial seed: only runs if DB is completely empty (first deploy)
@@ -95,14 +101,14 @@ def _sync_real_data_blocking():
         # Step 2: Seed ONLY if the DB is completely empty (first-time init)
         current_count = GlobalOpportunity.query.count()
         if current_count == 0:
-            print("Database is empty. Seeding with 100% real global dataset in background...")
+            logging.info("Database is empty. Seeding with 100% real global dataset in background...")
             run_crawler_and_save()
-            print("✅ Initial real data seed complete.")
+            logging.info("Initial real data seed complete.")
         else:
-            print(f"📊 Database has {current_count} records. No limit — data accumulates indefinitely.")
+            logging.info(f"Database has {current_count} records. No limit — data accumulates indefinitely.")
 
 def sync_real_data_to_db():
-    print("Initiating async data sync check...")
+    logging.info("Initiating async data sync check...")
     thread = threading.Thread(target=_sync_real_data_blocking, daemon=True)
     thread.start()
 
@@ -118,16 +124,16 @@ def auto_crawl_scheduler():
     import time as _time
     while True:
         _time.sleep(AUTO_CRAWL_INTERVAL)
-        print(f"\n🕐 [{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Auto-crawl starting (Global)...")
+        logging.info(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Auto-crawl starting (Global)...")
         try:
             run_crawler_and_save()
-            print("✅ Auto-crawl (Global) complete.")
+            logging.info("Auto-crawl (Global) complete.")
         except Exception as e:
-            print(f"❌ Auto-crawl (Global) error: {e}")
+            logging.error(f"Auto-crawl (Global) error: {e}", exc_info=True)
 
 _scheduler_thread = threading.Thread(target=auto_crawl_scheduler, daemon=True)
 _scheduler_thread.start()
-print(f"🕐 Auto-crawl scheduler started (every {AUTO_CRAWL_INTERVAL // 3600} hours)")
+logging.info(f"Auto-crawl scheduler started (every {AUTO_CRAWL_INTERVAL // 3600} hours)")
 
 @app.route('/')
 def index():
@@ -144,7 +150,13 @@ def admin():
 
 def require_admin_key():
     api_key = request.headers.get('X-Admin-Key') or request.args.get('api_key')
-    expected_key = os.environ.get('ADMIN_API_KEY', 'default-insecure-admin-key-change-me')
+    expected_key = os.environ.get('ADMIN_API_KEY')
+    
+    # Fail fast if ADMIN_API_KEY is not configured in environment
+    if not expected_key:
+        logging.warning("ADMIN_API_KEY is not set in environment! Rejecting admin action.")
+        return False
+        
     return api_key == expected_key
 
 @app.route('/api/admin/sources', methods=['GET', 'POST'])
@@ -179,17 +191,19 @@ def api_health():
 
 @app.route('/robots.txt')
 def robots_txt():
+    host_url = request.host_url.rstrip('/')
     return Response(
-        'User-agent: *\nAllow: /\nSitemap: https://global-startup-explorerglobal-startup.onrender.com/sitemap.xml\n',
+        f'User-agent: *\nAllow: /\nSitemap: {host_url}/sitemap.xml\n',
         mimetype='text/plain'
     )
 
 @app.route('/sitemap.xml')
 def sitemap_xml():
-    xml = '''<?xml version="1.0" encoding="UTF-8"?>
+    host_url = request.host_url.rstrip('/')
+    xml = f'''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://global-startup-explorerglobal-startup.onrender.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://global-startup-explorerglobal-startup.onrender.com/api/health</loc><changefreq>always</changefreq><priority>0.3</priority></url>
+  <url><loc>{host_url}/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>{host_url}/api/health</loc><changefreq>always</changefreq><priority>0.3</priority></url>
 </urlset>'''
     return Response(xml, mimetype='application/xml')
 
@@ -197,6 +211,9 @@ last_refresh_time = 0
 
 @app.route('/api/refresh', methods=['POST'])
 def api_refresh():
+    if not require_admin_key():
+        return jsonify({"status": "error", "message": "Unauthorized"}), 401
+        
     global last_refresh_time
     import time
     now = time.time()

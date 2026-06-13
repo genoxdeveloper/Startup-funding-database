@@ -205,6 +205,20 @@ def get_real_accelerator_branches():
         ("Phoenix", "USA"), ("Minneapolis", "USA"), ("Detroit", "USA"), ("Pittsburgh", "USA"),
         ("Osaka", "Japan"), ("Fukuoka", "Japan"), ("Busan", "South Korea"), ("Shenzhen", "China"),
         ("Chengdu", "China"), ("Hangzhou", "China"), ("Pune", "India"), ("Hyderabad", "India"), ("Chennai", "India"),
+        # Huge Expansion: 40+ more cities for hyper scale
+        ("Calgary", "Canada"), ("Edmonton", "Canada"), ("Ottawa", "Canada"), ("Halifax", "Canada"),
+        ("Frankfurt", "Germany"), ("Munich", "Germany"), ("Hamburg", "Germany"), ("Stuttgart", "Germany"),
+        ("Manchester", "UK"), ("Edinburgh", "UK"), ("Birmingham", "UK"), ("Glasgow", "UK"),
+        ("Lyon", "France"), ("Toulouse", "France"), ("Marseille", "France"), ("Bordeaux", "France"),
+        ("Gothenburg", "Sweden"), ("Malmo", "Sweden"), ("Aarhus", "Denmark"), ("Bergen", "Norway"),
+        ("Brisbane", "Australia"), ("Perth", "Australia"), ("Adelaide", "Australia"), ("Hobart", "Australia"),
+        ("Wellington", "New Zealand"), ("Christchurch", "New Zealand"),
+        ("Guadalajara", "Mexico"), ("Monterrey", "Mexico"), ("Medellin", "Colombia"), ("Cordoba", "Argentina"),
+        ("Rosario", "Argentina"), ("Rio de Janeiro", "Brazil"), ("Curitiba", "Brazil"), ("Porto Alegre", "Brazil"),
+        ("Abuja", "Nigeria"), ("Mombasa", "Kenya"), ("Pretoria", "South Africa"), ("Durban", "South Africa"),
+        ("Alexandria", "Egypt"), ("Rabat", "Morocco"), ("Algiers", "Algeria"), ("Kuwait City", "Kuwait"),
+        ("Manama", "Bahrain"), ("Dhaka", "Bangladesh"), ("Islamabad", "Pakistan"), ("Kabul", "Afghanistan"),
+        ("Kathmandu", "Nepal"), ("Thimphu", "Bhutan"), ("Male", "Maldives"), ("Ulaanbaatar", "Mongolia")
     ]
     
     franchises = [
@@ -214,7 +228,11 @@ def get_real_accelerator_branches():
         ("Techstars", "Global investment business that provides access to capital.", "VCs & Accelerators", "All", "$120K", "7-9% Equity"),
         ("Plug and Play", "Global innovation platform and early-stage investor.", "Corporate", "All", "Corporate Pilot", "Variable"),
         ("500 Global", "Venture capital firm that invests early in founders building fast-growing tech.", "VCs & Accelerators", "All", "$150K", "6% Equity"),
-        ("Founder Institute pre-seed", "Early stage idea-to-company accelerator.", "VCs & Accelerators", "All", "Mentorship", "Variable")
+        ("Founder Institute pre-seed", "Early stage idea-to-company accelerator.", "VCs & Accelerators", "All", "Mentorship", "Variable"),
+        ("Seedstars", "Emerging market accelerator and seed stage fund.", "VCs & Accelerators", "Impact", "$50K", "Yes"),
+        ("Village Capital", "Early-stage venture capital firm finding, training, and investing in entrepreneurs.", "VCs & Accelerators", "Impact", "$50K - $100K", "Variable"),
+        ("Endeavor", "Global community of, by, and for High-Impact Entrepreneurs.", "VCs & Accelerators", "ScaleUp", "Network", "No"),
+        ("Startupbootcamp", "Global family of industry-focused accelerators.", "VCs & Accelerators", "All", "€15K", "8% Equity")
     ]
     
     branches = []

@@ -1,6 +1,27 @@
+<div align="center">
+
+# Awesome Startup Global Explorer
+
+**Discover startup funding, grants, accelerators & cloud perks across 188+ countries and 100+ industries.**
+
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Flask](https://img.shields.io/badge/Flask-2.x-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?style=for-the-badge)](LICENSE)
+[![Genox Holdings](https://img.shields.io/badge/_Genox_Holdings-Official_Site-FF6F00?style=for-the-badge)](https://genoxholdings.com)
+
+[**English**](README.md) | [**한국어**](README.ko.md) | [**中文**](README.zh_Hans.md) | [**Español**](README.es.md) | [**العربية**](README.ar.md)
+
+*Built for startups, by a startup in Seoul, South Korea*  
+*An open-source project by [Genox Holdings](https://genoxholdings.com)*
+
+</div>
+
+---
+
 <div align="center" dir="rtl">
 
-#  Awesome Awesome Startup Global Explorer Explorer (مستكشف الشركات الناشئة العالمي)
+#  Awesome Startup Global Explorer Explorer (مستكشف الشركات الناشئة العالمي)
 
 **اكتشف تمويل الشركات الناشئة، والمنح، والمسرعات، ومزايا السحابة عبر أكثر من 188 دولة وأكثر من 100 صناعة.**
 
@@ -21,7 +42,7 @@
 
 <div dir="rtl">
 
-مرحباً بك في **Awesome Awesome Startup Global Explorer Explorer**، بوابتك النهائية للتنقل في بيئة الشركات الناشئة العالمية. سواء كنت مؤسساً في المراحل المبكرة تبحث عن تمويل أولي، أو شركة تكنولوجية في مرحلة التوسع تبحث عن منح حكومية وصناديق رأس مال استثماري من الدرجة الأولى، فإن هذه المنصة تجمع **أكثر من 33,000 فرصة تمويل عبر أكثر من 188 دولة**.
+مرحباً بك في **Awesome Startup Global Explorer Explorer**، بوابتك النهائية للتنقل في بيئة الشركات الناشئة العالمية. سواء كنت مؤسساً في المراحل المبكرة تبحث عن تمويل أولي، أو شركة تكنولوجية في مرحلة التوسع تبحث عن منح حكومية وصناديق رأس مال استثماري من الدرجة الأولى، فإن هذه المنصة تجمع **أكثر من 33,000 فرصة تمويل عبر أكثر من 188 دولة**.
 
 ![Demo Dashboard](demo_en.png)
 

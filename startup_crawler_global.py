@@ -11,6 +11,7 @@ Uses aiohttp for high-concurrency non-blocking I/O.
 """
 
 import asyncio
+import logging
 import aiohttp
 import random
 from datetime import datetime, timedelta
@@ -38,7 +39,7 @@ async def fetch_json(session, url, payload=None):
         else:
             async with session.get(url, headers=headers, timeout=timeout) as resp:
                 if resp.status == 200: return await resp.json()
-    except Exception as e: print(f"JSON Error {url}: {e}")
+    except Exception as e: logging.error(f"JSON Error {url}: {e}", exc_info=True)
     return None
 
 async def fetch_html(session, url):
@@ -47,7 +48,7 @@ async def fetch_html(session, url):
     try:
         async with session.get(url, headers=headers, timeout=timeout) as resp:
             if resp.status == 200: return await resp.text()
-    except Exception as e: print(f"HTML Error {url}: {e}")
+    except Exception as e: logging.error(f"HTML Error {url}: {e}", exc_info=True)
     return ""
 
 import hashlib
@@ -74,7 +75,7 @@ def gen_rand_score(base, seed_str=""):
 # 1. USA & North America (60+ items)
 # -------------------------------------------------------------------------
 async def crawl_usa_and_canada(session):
-    print("Crawling USA Solicitations (SBIR/SBA) and Canada...")
+    logging.info("Crawling USA Solicitations (SBIR/SBA) and Canada...")
     res = []
     
     # 1.1 USA - SBIR/STTR Data
@@ -127,7 +128,7 @@ async def crawl_usa_and_canada(session):
 # 2. Europe (UK, EU, DACH, Nordic) (50+ items)
 # -------------------------------------------------------------------------
 async def crawl_europe(session):
-    print("Crawling UK, EU Horizon, DACH, and Nordics...")
+    logging.info("Crawling UK, EU Horizon, DACH, and Nordics...")
     res = []
     
     # 2.1 UK Innovate
@@ -190,7 +191,7 @@ async def crawl_europe(session):
 # 3. Asia Pacific (Singapore, India, Japan, South Korea, etc.) (60+ items)
 # -------------------------------------------------------------------------
 async def crawl_asia_pacific(session):
-    print("Crawling Asia Pacific (SG, IN, JP, KR)...")
+    logging.info("Crawling Asia Pacific (SG, IN, JP, KR)...")
     res = []
     
     ap_opps = [
@@ -249,7 +250,7 @@ async def crawl_asia_pacific(session):
 # 4. MEA & LatAm (UAE, Saudi, Brazil, Africa) (30+ items)
 # -------------------------------------------------------------------------
 async def crawl_mea_latam(session):
-    print("Crawling MEA, LatAm & Africa...")
+    logging.info("Crawling MEA, LatAm & Africa...")
     res = []
     
     mea_latam_opps = [
@@ -287,7 +288,7 @@ async def crawl_mea_latam(session):
 # 5. Massive Global Accelerators & Perks (100+ items generated)
 # -------------------------------------------------------------------------
 async def crawl_global_accelerators(session):
-    print("Crawling Top Tier Global Accelerators & Cloud Perks (YC, Techstars, AWS, Google)...")
+    logging.info("Crawling Top Tier Global Accelerators & Cloud Perks (YC, Techstars, AWS, Google)...")
     res = []
     
     accel_templates = [
@@ -364,7 +365,7 @@ async def crawl_global_accelerators(session):
 # Execution Engine
 # -------------------------------------------------------------------------
 async def crawl_massive_vcs(session):
-    print("Crawling Massive Real Global VCs & CVCs...")
+    logging.info("Crawling Massive Real Global VCs & CVCs...")
     res = []
     massive_list = get_massive_vcs()
     for t, d, c, cat, ind, f, eq in massive_list:
@@ -401,7 +402,7 @@ async def crawl_massive_vcs(session):
 
 async def main_crawler():
     async with aiohttp.ClientSession() as session:
-        print("🚀 [GLOBAL 2.0] MASSIVE ENGINE INITIATED...")
+        logging.info("[GLOBAL 2.0] MASSIVE ENGINE INITIATED...")
         tasks = [
             crawl_usa_and_canada(session), 
             crawl_europe(session),
@@ -415,7 +416,7 @@ async def main_crawler():
         return opportunities
 
 def run_crawler_and_save(app=None):
-    print(f"[{datetime.now()}] Starting Global 2.0 Crawler (Massive Scale)...")
+    logging.info(f"[{datetime.now()}] Starting Global 2.0 Crawler (Massive Scale)...")
     if app is None:
         from app import app as flask_app
         app = flask_app
@@ -423,18 +424,17 @@ def run_crawler_and_save(app=None):
     with app.app_context():
         try:
             opportunities = asyncio.run(main_crawler())
-            print(f"Crawled {len(opportunities)} new items. Slicing into safe RAM chunks...")
+            logging.info(f"Crawled {len(opportunities)} new items. Slicing into safe RAM chunks...")
             
-            print("Clearing old global opportunities and inserting new data in a single transaction...")
+            logging.info("Clearing old global opportunities and inserting new data in a single transaction...")
             db.session.query(GlobalOpportunity).delete()
             db.session.add_all(opportunities)
             db.session.commit()
-            print(f"📦 Committed {len(opportunities)} records atomically.")
+            logging.info(f"Committed {len(opportunities)} records atomically.")
                 
             count_after = GlobalOpportunity.query.count()
-            print(f"✅ HYPER-SCALE CRAWL COMPLETE. Database Total: {count_after} (NO LIMIT).")
-        except Exception as e:
-            print(f"❌ Error during Background Recrawl: {str(e)}")
+            logging.info(f"HYPER-SCALE CRAWL COMPLETE. Database Total: {count_after} (NO LIMIT).")
+        except Exception as e: logging.error(f"Error during Background Recrawl: {str(e, exc_info=True)}")
 
 if __name__ == "__main__":
     run_crawler_and_save()
