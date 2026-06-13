@@ -22,7 +22,7 @@ app.config['BABEL_SUPPORTED_LOCALES'] = ['en', 'ko', 'ja', 'zh_Hans', 'zh_Hant',
 app.secret_key = os.environ.get('SECRET_KEY', 'default-insecure-secret-key')
 
 def get_locale():
-    return request.args.get('lang') or session.get('lang') or request.accept_languages.best_match(app.config['BABEL_SUPPORTED_LOCALES'])
+    return request.args.get('lang') or session.get('lang') or 'en'
 
 babel = Babel(app, locale_selector=get_locale)
 

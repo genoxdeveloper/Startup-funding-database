@@ -20,945 +20,945 @@ msgstr ""
 
 #: dummy_strings.py:2 dummy_strings.py:29
 msgid "Global"
-msgstr ""
+msgstr "全球的"
 
 #: dummy_strings.py:3 templates/index.html:271
 msgid "All Countries"
-msgstr ""
+msgstr "所有国家"
 
 #: dummy_strings.py:4
 msgid "Canada"
-msgstr ""
+msgstr "加拿大"
 
 #: dummy_strings.py:5
 msgid "EU"
-msgstr ""
+msgstr "欧盟"
 
 #: dummy_strings.py:6
 msgid "Germany"
-msgstr ""
+msgstr "德国"
 
 #: dummy_strings.py:7
 msgid "France"
-msgstr ""
+msgstr "法国"
 
 #: dummy_strings.py:8
 msgid "Sweden"
-msgstr ""
+msgstr "瑞典"
 
 #: dummy_strings.py:9
 msgid "Finland"
-msgstr ""
+msgstr "芬兰"
 
 #: dummy_strings.py:10
 msgid "Estonia"
-msgstr ""
+msgstr "爱沙尼亚"
 
 #: dummy_strings.py:11
 msgid "Spain"
-msgstr ""
+msgstr "西班牙"
 
 #: dummy_strings.py:12
 msgid "Singapore"
-msgstr ""
+msgstr "新加坡"
 
 #: dummy_strings.py:13
 msgid "India"
-msgstr ""
+msgstr "印度"
 
 #: dummy_strings.py:14
 msgid "USA"
-msgstr ""
+msgstr "美国"
 
 #: dummy_strings.py:15
 msgid "Japan"
-msgstr ""
+msgstr "日本"
 
 #: dummy_strings.py:16
 msgid "South Korea"
-msgstr ""
+msgstr "韩国"
 
 #: dummy_strings.py:17
 msgid "Taiwan"
-msgstr ""
+msgstr "台湾"
 
 #: dummy_strings.py:18
 msgid "Hong Kong"
-msgstr ""
+msgstr "香港"
 
 #: dummy_strings.py:19
 msgid "Australia"
-msgstr ""
+msgstr "澳大利亚"
 
 #: dummy_strings.py:20
 msgid "UAE"
-msgstr ""
+msgstr "阿联酋"
 
 #: dummy_strings.py:21
 msgid "Saudi Arabia"
-msgstr ""
+msgstr "沙特阿拉伯"
 
 #: dummy_strings.py:22
 msgid "Chile"
-msgstr ""
+msgstr "智利"
 
 #: dummy_strings.py:23
 msgid "Brazil"
-msgstr ""
+msgstr "巴西"
 
 #: dummy_strings.py:24
 msgid "Argentina"
-msgstr ""
+msgstr "阿根廷"
 
 #: dummy_strings.py:25
 msgid "Mexico"
-msgstr ""
+msgstr "墨西哥"
 
 #: dummy_strings.py:26
 msgid "South Africa"
-msgstr ""
+msgstr "南非"
 
 #: dummy_strings.py:27
 msgid "Ghana"
-msgstr ""
+msgstr "加纳"
 
 #: dummy_strings.py:28
 msgid "Nigeria"
-msgstr ""
+msgstr "尼日利亚"
 
 #: dummy_strings.py:30
 msgid "UK"
-msgstr ""
+msgstr "英国"
 
 #: dummy_strings.py:31
 msgid "Israel"
-msgstr ""
+msgstr "以色列"
 
 #: dummy_strings.py:32
 msgid "Switzerland"
-msgstr ""
+msgstr "瑞士"
 
 #: dummy_strings.py:33
 msgid "China"
-msgstr ""
+msgstr "中国"
 
 #: dummy_strings.py:34
 msgid "Indonesia"
-msgstr ""
+msgstr "印度尼西亚"
 
 #: dummy_strings.py:35
 msgid "Kenya"
-msgstr ""
+msgstr "肯尼亚"
 
 #: dummy_strings.py:36
 msgid "Netherlands"
-msgstr ""
+msgstr "荷兰"
 
 #: dummy_strings.py:37
 msgid "Denmark"
-msgstr ""
+msgstr "丹麦"
 
 #: dummy_strings.py:38
 msgid "Norway"
-msgstr ""
+msgstr "挪威"
 
 #: dummy_strings.py:39
 msgid "Ireland"
-msgstr ""
+msgstr "爱尔兰"
 
 #: dummy_strings.py:40
 msgid "Italy"
-msgstr ""
+msgstr "意大利"
 
 #: dummy_strings.py:41
 msgid "Austria"
-msgstr ""
+msgstr "奥地利"
 
 #: dummy_strings.py:42
 msgid "Poland"
-msgstr ""
+msgstr "波兰"
 
 #: dummy_strings.py:43
 msgid "Czech Republic"
-msgstr ""
+msgstr "捷克共和国"
 
 #: dummy_strings.py:44
 msgid "Hungary"
-msgstr ""
+msgstr "匈牙利"
 
 #: dummy_strings.py:45
 msgid "Romania"
-msgstr ""
+msgstr "罗马尼亚"
 
 #: dummy_strings.py:46
 msgid "Greece"
-msgstr ""
+msgstr "希腊"
 
 #: dummy_strings.py:47
 msgid "Turkey"
-msgstr ""
+msgstr "火鸡"
 
 #: dummy_strings.py:48
 msgid "Philippines"
-msgstr ""
+msgstr "菲律宾"
 
 #: dummy_strings.py:49
 msgid "Thailand"
-msgstr ""
+msgstr "泰国"
 
 #: dummy_strings.py:50
 msgid "Malaysia"
-msgstr ""
+msgstr "马来西亚"
 
 #: dummy_strings.py:51
 msgid "Vietnam"
-msgstr ""
+msgstr "越南"
 
 #: dummy_strings.py:52
 msgid "New Zealand"
-msgstr ""
+msgstr "新西兰"
 
 #: dummy_strings.py:53
 msgid "Colombia"
-msgstr ""
+msgstr "哥伦比亚"
 
 #: dummy_strings.py:54
 msgid "Peru"
-msgstr ""
+msgstr "秘鲁"
 
 #: dummy_strings.py:55
 msgid "Egypt"
-msgstr ""
+msgstr "埃及"
 
 #: dummy_strings.py:56
 msgid "Morocco"
-msgstr ""
+msgstr "摩洛哥"
 
 #: dummy_strings.py:57
 msgid "Afghanistan"
-msgstr ""
+msgstr "阿富汗"
 
 #: dummy_strings.py:58
 msgid "Albania"
-msgstr ""
+msgstr "阿尔巴尼亚"
 
 #: dummy_strings.py:59
 msgid "Algeria"
-msgstr ""
+msgstr "阿尔及利亚"
 
 #: dummy_strings.py:60
 msgid "Andorra"
-msgstr ""
+msgstr "安道尔"
 
 #: dummy_strings.py:61
 msgid "Angola"
-msgstr ""
+msgstr "安哥拉"
 
 #: dummy_strings.py:62
 msgid "Antigua and Barbuda"
-msgstr ""
+msgstr "安提瓜和巴布达"
 
 #: dummy_strings.py:63
 msgid "Armenia"
-msgstr ""
+msgstr "亚美尼亚"
 
 #: dummy_strings.py:64
 msgid "Azerbaijan"
-msgstr ""
+msgstr "阿塞拜疆"
 
 #: dummy_strings.py:65
 msgid "Bahamas"
-msgstr ""
+msgstr "巴哈马"
 
 #: dummy_strings.py:66
 msgid "Bahrain"
-msgstr ""
+msgstr "巴林"
 
 #: dummy_strings.py:67
 msgid "Bangladesh"
-msgstr ""
+msgstr "孟加拉国"
 
 #: dummy_strings.py:68
 msgid "Barbados"
-msgstr ""
+msgstr "巴巴多斯"
 
 #: dummy_strings.py:69
 msgid "Belarus"
-msgstr ""
+msgstr "白俄罗斯"
 
 #: dummy_strings.py:70
 msgid "Belgium"
-msgstr ""
+msgstr "比利时"
 
 #: dummy_strings.py:71
 msgid "Belize"
-msgstr ""
+msgstr "伯利兹"
 
 #: dummy_strings.py:72
 msgid "Benin"
-msgstr ""
+msgstr "贝宁"
 
 #: dummy_strings.py:73
 msgid "Bhutan"
-msgstr ""
+msgstr "不丹"
 
 #: dummy_strings.py:74
 msgid "Bolivia"
-msgstr ""
+msgstr "玻利维亚"
 
 #: dummy_strings.py:75
 msgid "Bosnia"
-msgstr ""
+msgstr "波斯尼亚"
 
 #: dummy_strings.py:76
 msgid "Botswana"
-msgstr ""
+msgstr "博茨瓦纳"
 
 #: dummy_strings.py:77
 msgid "Brunei"
-msgstr ""
+msgstr "文莱"
 
 #: dummy_strings.py:78
 msgid "Bulgaria"
-msgstr ""
+msgstr "保加利亚"
 
 #: dummy_strings.py:79
 msgid "Burkina Faso"
-msgstr ""
+msgstr "布基纳法索"
 
 #: dummy_strings.py:80
 msgid "Burundi"
-msgstr ""
+msgstr "布隆迪"
 
 #: dummy_strings.py:81
 msgid "Cabo Verde"
-msgstr ""
+msgstr "佛得角"
 
 #: dummy_strings.py:82
 msgid "Cambodia"
-msgstr ""
+msgstr "柬埔寨"
 
 #: dummy_strings.py:83
 msgid "Cameroon"
-msgstr ""
+msgstr "喀麦隆"
 
 #: dummy_strings.py:84
 msgid "Central African Republic"
-msgstr ""
+msgstr "中非共和国"
 
 #: dummy_strings.py:85
 msgid "Chad"
-msgstr ""
+msgstr "乍得"
 
 #: dummy_strings.py:86
 msgid "Comoros"
-msgstr ""
+msgstr "科摩罗"
 
 #: dummy_strings.py:87
 msgid "Congo"
-msgstr ""
+msgstr "刚果"
 
 #: dummy_strings.py:88
 msgid "Costa Rica"
-msgstr ""
+msgstr "哥斯达黎加"
 
 #: dummy_strings.py:89
 msgid "Croatia"
-msgstr ""
+msgstr "克罗地亚"
 
 #: dummy_strings.py:90
 msgid "Cuba"
-msgstr ""
+msgstr "古巴"
 
 #: dummy_strings.py:91
 msgid "Cyprus"
-msgstr ""
+msgstr "塞浦路斯"
 
 #: dummy_strings.py:92
 msgid "Djibouti"
-msgstr ""
+msgstr "吉布提"
 
 #: dummy_strings.py:93
 msgid "Dominica"
-msgstr ""
+msgstr "多米尼克"
 
 #: dummy_strings.py:94
 msgid "Dominican Republic"
-msgstr ""
+msgstr "多明尼加共和国"
 
 #: dummy_strings.py:95
 msgid "Ecuador"
-msgstr ""
+msgstr "厄瓜多尔"
 
 #: dummy_strings.py:96
 msgid "El Salvador"
-msgstr ""
+msgstr "萨尔瓦多"
 
 #: dummy_strings.py:97
 msgid "Equatorial Guinea"
-msgstr ""
+msgstr "赤道几内亚"
 
 #: dummy_strings.py:98
 msgid "Eritrea"
-msgstr ""
+msgstr "厄立特里亚"
 
 #: dummy_strings.py:99
 msgid "Eswatini"
-msgstr ""
+msgstr "史瓦帝尼"
 
 #: dummy_strings.py:100
 msgid "Ethiopia"
-msgstr ""
+msgstr "埃塞俄比亚"
 
 #: dummy_strings.py:101
 msgid "Fiji"
-msgstr ""
+msgstr "斐济"
 
 #: dummy_strings.py:102
 msgid "Gabon"
-msgstr ""
+msgstr "加蓬"
 
 #: dummy_strings.py:103
 msgid "Gambia"
-msgstr ""
+msgstr "冈比亚"
 
 #: dummy_strings.py:104
 msgid "Georgia"
-msgstr ""
+msgstr "乔治亚州"
 
 #: dummy_strings.py:105
 msgid "Grenada"
-msgstr ""
+msgstr "格林纳达"
 
 #: dummy_strings.py:106
 msgid "Guatemala"
-msgstr ""
+msgstr "危地马拉"
 
 #: dummy_strings.py:107
 msgid "Guinea"
-msgstr ""
+msgstr "几内亚"
 
 #: dummy_strings.py:108
 msgid "Guyana"
-msgstr ""
+msgstr "圭亚那"
 
 #: dummy_strings.py:109
 msgid "Haiti"
-msgstr ""
+msgstr "海地"
 
 #: dummy_strings.py:110
 msgid "Honduras"
-msgstr ""
+msgstr "洪都拉斯"
 
 #: dummy_strings.py:111
 msgid "Iceland"
-msgstr ""
+msgstr "冰岛"
 
 #: dummy_strings.py:112
 msgid "Iran"
-msgstr ""
+msgstr "伊朗"
 
 #: dummy_strings.py:113
 msgid "Iraq"
-msgstr ""
+msgstr "伊拉克"
 
 #: dummy_strings.py:114
 msgid "Jamaica"
-msgstr ""
+msgstr "牙买加"
 
 #: dummy_strings.py:115
 msgid "Jordan"
-msgstr ""
+msgstr "约旦"
 
 #: dummy_strings.py:116
 msgid "Kazakhstan"
-msgstr ""
+msgstr "哈萨克斯坦"
 
 #: dummy_strings.py:117
 msgid "Kiribati"
-msgstr ""
+msgstr "基里巴斯"
 
 #: dummy_strings.py:118
 msgid "Kuwait"
-msgstr ""
+msgstr "科威特"
 
 #: dummy_strings.py:119
 msgid "Kyrgyzstan"
-msgstr ""
+msgstr "吉尔吉斯斯坦"
 
 #: dummy_strings.py:120
 msgid "Laos"
-msgstr ""
+msgstr "老挝"
 
 #: dummy_strings.py:121
 msgid "Latvia"
-msgstr ""
+msgstr "拉脱维亚"
 
 #: dummy_strings.py:122
 msgid "Lebanon"
-msgstr ""
+msgstr "黎巴嫩"
 
 #: dummy_strings.py:123
 msgid "Lesotho"
-msgstr ""
+msgstr "莱索托"
 
 #: dummy_strings.py:124
 msgid "Liberia"
-msgstr ""
+msgstr "利比里亚"
 
 #: dummy_strings.py:125
 msgid "Libya"
-msgstr ""
+msgstr "利比亚"
 
 #: dummy_strings.py:126
 msgid "Liechtenstein"
-msgstr ""
+msgstr "列支敦士登"
 
 #: dummy_strings.py:127
 msgid "Lithuania"
-msgstr ""
+msgstr "立陶宛"
 
 #: dummy_strings.py:128
 msgid "Luxembourg"
-msgstr ""
+msgstr "卢森堡"
 
 #: dummy_strings.py:129
 msgid "Madagascar"
-msgstr ""
+msgstr "马达加斯加"
 
 #: dummy_strings.py:130
 msgid "Malawi"
-msgstr ""
+msgstr "马拉维"
 
 #: dummy_strings.py:131
 msgid "Maldives"
-msgstr ""
+msgstr "马尔代夫"
 
 #: dummy_strings.py:132
 msgid "Mali"
-msgstr ""
+msgstr "马里"
 
 #: dummy_strings.py:133
 msgid "Malta"
-msgstr ""
+msgstr "马耳他"
 
 #: dummy_strings.py:134
 msgid "Marshall Islands"
-msgstr ""
+msgstr "马绍尔群岛"
 
 #: dummy_strings.py:135
 msgid "Mauritania"
-msgstr ""
+msgstr "毛里塔尼亚"
 
 #: dummy_strings.py:136
 msgid "Mauritius"
-msgstr ""
+msgstr "毛里求斯"
 
 #: dummy_strings.py:137
 msgid "Micronesia"
-msgstr ""
+msgstr "密克罗尼西亚"
 
 #: dummy_strings.py:138
 msgid "Moldova"
-msgstr ""
+msgstr "摩尔多瓦"
 
 #: dummy_strings.py:139
 msgid "Monaco"
-msgstr ""
+msgstr "摩纳哥"
 
 #: dummy_strings.py:140
 msgid "Mongolia"
-msgstr ""
+msgstr "蒙古"
 
 #: dummy_strings.py:141
 msgid "Montenegro"
-msgstr ""
+msgstr "黑山"
 
 #: dummy_strings.py:142
 msgid "Mozambique"
-msgstr ""
+msgstr "莫桑比克"
 
 #: dummy_strings.py:143
 msgid "Myanmar"
-msgstr ""
+msgstr "缅甸"
 
 #: dummy_strings.py:144
 msgid "Namibia"
-msgstr ""
+msgstr "纳米比亚"
 
 #: dummy_strings.py:145
 msgid "Nauru"
-msgstr ""
+msgstr "瑙鲁"
 
 #: dummy_strings.py:146
 msgid "Nepal"
-msgstr ""
+msgstr "尼泊尔"
 
 #: dummy_strings.py:147
 msgid "Nicaragua"
-msgstr ""
+msgstr "尼加拉瓜"
 
 #: dummy_strings.py:148
 msgid "Niger"
-msgstr ""
+msgstr "尼日尔"
 
 #: dummy_strings.py:149
 msgid "North Macedonia"
-msgstr ""
+msgstr "北马其顿"
 
 #: dummy_strings.py:150
 msgid "Oman"
-msgstr ""
+msgstr "阿曼"
 
 #: dummy_strings.py:151
 msgid "Pakistan"
-msgstr ""
+msgstr "巴基斯坦"
 
 #: dummy_strings.py:152
 msgid "Palau"
-msgstr ""
+msgstr "帕劳"
 
 #: dummy_strings.py:153
 msgid "Panama"
-msgstr ""
+msgstr "巴拿马"
 
 #: dummy_strings.py:154
 msgid "Papua New Guinea"
-msgstr ""
+msgstr "巴布亚新几内亚"
 
 #: dummy_strings.py:155
 msgid "Paraguay"
-msgstr ""
+msgstr "巴拉圭"
 
 #: dummy_strings.py:156
 msgid "Portugal"
-msgstr ""
+msgstr "葡萄牙"
 
 #: dummy_strings.py:157
 msgid "Qatar"
-msgstr ""
+msgstr "卡塔尔"
 
 #: dummy_strings.py:158
 msgid "Rwanda"
-msgstr ""
+msgstr "卢旺达"
 
 #: dummy_strings.py:159
 msgid "Samoa"
-msgstr ""
+msgstr "萨摩亚"
 
 #: dummy_strings.py:160
 msgid "San Marino"
-msgstr ""
+msgstr "圣马力诺"
 
 #: dummy_strings.py:161
 msgid "Senegal"
-msgstr ""
+msgstr "塞内加尔"
 
 #: dummy_strings.py:162
 msgid "Serbia"
-msgstr ""
+msgstr "塞尔维亚"
 
 #: dummy_strings.py:163
 msgid "Seychelles"
-msgstr ""
+msgstr "塞舌尔"
 
 #: dummy_strings.py:164
 msgid "Sierra Leone"
-msgstr ""
+msgstr "塞拉利昂"
 
 #: dummy_strings.py:165
 msgid "Slovakia"
-msgstr ""
+msgstr "斯洛伐克"
 
 #: dummy_strings.py:166
 msgid "Slovenia"
-msgstr ""
+msgstr "斯洛文尼亚"
 
 #: dummy_strings.py:167
 msgid "Solomon Islands"
-msgstr ""
+msgstr "所罗门群岛"
 
 #: dummy_strings.py:168
 msgid "Somalia"
-msgstr ""
+msgstr "索马里"
 
 #: dummy_strings.py:169
 msgid "Sri Lanka"
-msgstr ""
+msgstr "斯里兰卡"
 
 #: dummy_strings.py:170
 msgid "Sudan"
-msgstr ""
+msgstr "苏丹"
 
 #: dummy_strings.py:171
 msgid "Suriname"
-msgstr ""
+msgstr "苏里南"
 
 #: dummy_strings.py:172
 msgid "Syria"
-msgstr ""
+msgstr "叙利亚"
 
 #: dummy_strings.py:173
 msgid "Tajikistan"
-msgstr ""
+msgstr "塔吉克斯坦"
 
 #: dummy_strings.py:174
 msgid "Tanzania"
-msgstr ""
+msgstr "坦桑尼亚"
 
 #: dummy_strings.py:175
 msgid "Togo"
-msgstr ""
+msgstr "多哥"
 
 #: dummy_strings.py:176
 msgid "Tonga"
-msgstr ""
+msgstr "汤加"
 
 #: dummy_strings.py:177
 msgid "Trinidad and Tobago"
-msgstr ""
+msgstr "特立尼达和多巴哥"
 
 #: dummy_strings.py:178
 msgid "Tunisia"
-msgstr ""
+msgstr "突尼斯"
 
 #: dummy_strings.py:179
 msgid "Turkmenistan"
-msgstr ""
+msgstr "土库曼斯坦"
 
 #: dummy_strings.py:180
 msgid "Tuvalu"
-msgstr ""
+msgstr "图瓦卢"
 
 #: dummy_strings.py:181
 msgid "Uganda"
-msgstr ""
+msgstr "乌干达"
 
 #: dummy_strings.py:182
 msgid "Ukraine"
-msgstr ""
+msgstr "乌克兰"
 
 #: dummy_strings.py:183
 msgid "United Arab Emirates"
-msgstr ""
+msgstr "阿拉伯联合酋长国"
 
 #: dummy_strings.py:184
 msgid "United Kingdom"
-msgstr ""
+msgstr "英国"
 
 #: dummy_strings.py:185
 msgid "Uruguay"
-msgstr ""
+msgstr "乌拉圭"
 
 #: dummy_strings.py:186
 msgid "Uzbekistan"
-msgstr ""
+msgstr "乌兹别克斯坦"
 
 #: dummy_strings.py:187
 msgid "Vanuatu"
-msgstr ""
+msgstr "瓦努阿图"
 
 #: dummy_strings.py:188
 msgid "Vatican City"
-msgstr ""
+msgstr "梵蒂冈城"
 
 #: dummy_strings.py:189
 msgid "Venezuela"
-msgstr ""
+msgstr "委内瑞拉"
 
 #: dummy_strings.py:190
 msgid "Yemen"
-msgstr ""
+msgstr "也门"
 
 #: dummy_strings.py:191
 msgid "Zambia"
-msgstr ""
+msgstr "赞比亚"
 
 #: dummy_strings.py:192
 msgid "Zimbabwe"
-msgstr ""
+msgstr "津巴布韦"
 
 #: dummy_strings.py:193 templates/index.html:289 templates/index.html:304
 msgid "Gov Grants"
-msgstr ""
+msgstr "政府拨款"
 
 #: dummy_strings.py:194
 msgid "Relocation/Growth"
-msgstr ""
+msgstr "搬迁/成长"
 
 #: dummy_strings.py:195 templates/index.html:291
 msgid "VCs & Accelerators"
-msgstr ""
+msgstr "风险投资和加速器"
 
 #: dummy_strings.py:196
 msgid "Corporate"
-msgstr ""
+msgstr "公司的"
 
 #: dummy_strings.py:197
 msgid "Perks"
-msgstr ""
+msgstr "福利"
 
 #: dummy_strings.py:198 templates/index.html:292 templates/index.html:312
 msgid "Cloud & Perks"
-msgstr ""
+msgstr "云和福利"
 
 #: templates/admin.html:25
 msgid "Crawler API System - Admin Dashboard"
-msgstr ""
+msgstr "爬虫API系统-管理仪表板"
 
 #: templates/admin.html:27
 msgid "Registered Crawler Sources"
-msgstr ""
+msgstr "注册爬虫源码"
 
 #: templates/admin.html:31
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: templates/admin.html:32
 msgid "Name"
-msgstr ""
+msgstr "姓名"
 
 #: templates/admin.html:33
 msgid "URL"
-msgstr ""
+msgstr "网址"
 
 #: templates/admin.html:34
 msgid "Method"
-msgstr ""
+msgstr "方法"
 
 #: templates/admin.html:35
 msgid "Status"
-msgstr ""
+msgstr "地位"
 
 #: templates/admin.html:36
 msgid "Last Crawled"
-msgstr ""
+msgstr "最后爬行"
 
 #: templates/admin.html:44
 msgid "Register New Source"
-msgstr ""
+msgstr "注册新来源"
 
 #: templates/admin.html:47
 msgid "Source Name"
-msgstr ""
+msgstr "来源名称"
 
 #: templates/admin.html:48
 msgid "e.g., YC Startup Directory"
-msgstr ""
+msgstr "例如，YC 启动目录"
 
 #: templates/admin.html:51
 msgid "Endpoint URL"
-msgstr ""
+msgstr "端点 URL"
 
 #: templates/admin.html:52
 msgid "https://api.example.com/v1/startups"
-msgstr ""
+msgstr "https://api.example.com/v1/startups"
 
 #: templates/admin.html:55
 msgid "HTTP Method"
-msgstr ""
+msgstr "HTTP方法"
 
 #: templates/admin.html:58
 msgid "Register Source"
-msgstr ""
+msgstr "注册来源"
 
 #: templates/index.html:230 templates/index.html:359
 msgid "Global Startup Ecosystem Explorer"
-msgstr ""
+msgstr "全球创业生态系统探索者"
 
 #: templates/index.html:231
 msgid "190+ Countries · 32,500+ Opportunities · Real-Time Discovery"
-msgstr ""
+msgstr "190 多个国家 · 32,500 多个机会 · 实时发现"
 
 #: templates/index.html:253
 msgid "Loading..."
-msgstr ""
+msgstr "加载中..."
 
 #: templates/index.html:256
 msgid "Recrawl"
-msgstr ""
+msgstr "重新爬行"
 
 #: templates/index.html:260
 msgid "Export CSV"
-msgstr ""
+msgstr "导出 CSV"
 
 #: templates/index.html:269 templates/index.html:343
 msgid "Country"
-msgstr ""
+msgstr "国家"
 
 #: templates/index.html:275
 msgid "Industry"
-msgstr ""
+msgstr "行业"
 
 #: templates/index.html:277
 msgid "All Industries"
-msgstr ""
+msgstr "所有行业"
 
 #: templates/index.html:281
 msgid "Search"
-msgstr ""
+msgstr "搜索"
 
 #: templates/index.html:282
 msgid "Search by title, provider, keyword..."
-msgstr ""
+msgstr "按标题、提供商、关键字搜索..."
 
 #: templates/index.html:288
 msgid "All Categories"
-msgstr ""
+msgstr "所有类别"
 
 #: templates/index.html:290
 msgid "Corporate OI"
-msgstr ""
+msgstr "企业OI"
 
 #: templates/index.html:293
 msgid "Relocation"
-msgstr ""
+msgstr "搬迁"
 
 #: templates/index.html:299
 msgid "Total Matches"
-msgstr ""
+msgstr "总比赛数"
 
 #: templates/index.html:308
 msgid "VCs & Accel"
-msgstr ""
+msgstr "风险投资和加速器"
 
 #: templates/index.html:316
 msgid "Countries"
-msgstr ""
+msgstr "国家"
 
 #: templates/index.html:324
 msgid "Recommended Opportunities"
-msgstr ""
+msgstr "推荐机会"
 
 #: templates/index.html:325
 msgid "Ranked by Fit Score"
-msgstr ""
+msgstr "按适合度分数排名"
 
 #: templates/index.html:333
 msgid "Full Database"
-msgstr ""
+msgstr "完整数据库"
 
 #: templates/index.html:341
 msgid "Category"
-msgstr ""
+msgstr "类别"
 
 #: templates/index.html:342
 msgid "Title"
-msgstr ""
+msgstr "标题"
 
 #: templates/index.html:344
 msgid "Provider"
-msgstr ""
+msgstr "提供者"
 
 #: templates/index.html:345
 msgid "Funding"
-msgstr ""
+msgstr "资金"
 
 #: templates/index.html:346
 msgid "Equity"
-msgstr ""
+msgstr "公平"
 
 #: templates/index.html:347
 msgid "Score"
-msgstr ""
+msgstr "分数"
 

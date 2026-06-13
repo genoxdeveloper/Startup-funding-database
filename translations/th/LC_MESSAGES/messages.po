@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-06-13 13:42+0900\n"
-"PO-Revision-Date: 2026-06-13 13:51+0900\n"
+"POT-Creation-Date: 2026-06-13 14:12+0900\n"
+"PO-Revision-Date: 2026-06-13 14:40+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: th\n"
 "Language-Team: th <LL@li.org>\n"
@@ -17,6 +17,790 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
+
+#: dummy_strings.py:2 dummy_strings.py:29
+msgid "Global"
+msgstr "ทั่วโลก"
+
+#: dummy_strings.py:3 templates/index.html:271
+msgid "All Countries"
+msgstr "ทุกประเทศ"
+
+#: dummy_strings.py:4
+msgid "Canada"
+msgstr "แคนาดา"
+
+#: dummy_strings.py:5
+msgid "EU"
+msgstr "สหภาพยุโรป"
+
+#: dummy_strings.py:6
+msgid "Germany"
+msgstr "เยอรมนี"
+
+#: dummy_strings.py:7
+msgid "France"
+msgstr "ฝรั่งเศส"
+
+#: dummy_strings.py:8
+msgid "Sweden"
+msgstr "สวีเดน"
+
+#: dummy_strings.py:9
+msgid "Finland"
+msgstr "ฟินแลนด์"
+
+#: dummy_strings.py:10
+msgid "Estonia"
+msgstr "เอสโตเนีย"
+
+#: dummy_strings.py:11
+msgid "Spain"
+msgstr "สเปน"
+
+#: dummy_strings.py:12
+msgid "Singapore"
+msgstr "สิงคโปร์"
+
+#: dummy_strings.py:13
+msgid "India"
+msgstr "อินเดีย"
+
+#: dummy_strings.py:14
+msgid "USA"
+msgstr "สหรัฐอเมริกา"
+
+#: dummy_strings.py:15
+msgid "Japan"
+msgstr "ญี่ปุ่น"
+
+#: dummy_strings.py:16
+msgid "South Korea"
+msgstr "เกาหลีใต้"
+
+#: dummy_strings.py:17
+msgid "Taiwan"
+msgstr "ไต้หวัน"
+
+#: dummy_strings.py:18
+msgid "Hong Kong"
+msgstr "ฮ่องกง"
+
+#: dummy_strings.py:19
+msgid "Australia"
+msgstr "ออสเตรเลีย"
+
+#: dummy_strings.py:20
+msgid "UAE"
+msgstr "ยูเออี"
+
+#: dummy_strings.py:21
+msgid "Saudi Arabia"
+msgstr "ซาอุดีอาระเบีย"
+
+#: dummy_strings.py:22
+msgid "Chile"
+msgstr "ชิลี"
+
+#: dummy_strings.py:23
+msgid "Brazil"
+msgstr "บราซิล"
+
+#: dummy_strings.py:24
+msgid "Argentina"
+msgstr "อาร์เจนตินา"
+
+#: dummy_strings.py:25
+msgid "Mexico"
+msgstr "เม็กซิโก"
+
+#: dummy_strings.py:26
+msgid "South Africa"
+msgstr "แอฟริกาใต้"
+
+#: dummy_strings.py:27
+msgid "Ghana"
+msgstr "กานา"
+
+#: dummy_strings.py:28
+msgid "Nigeria"
+msgstr "ไนจีเรีย"
+
+#: dummy_strings.py:30
+msgid "UK"
+msgstr "สหราชอาณาจักร"
+
+#: dummy_strings.py:31
+msgid "Israel"
+msgstr "อิสราเอล"
+
+#: dummy_strings.py:32
+msgid "Switzerland"
+msgstr "สวิตเซอร์แลนด์"
+
+#: dummy_strings.py:33
+msgid "China"
+msgstr "จีน"
+
+#: dummy_strings.py:34
+msgid "Indonesia"
+msgstr "อินโดนีเซีย"
+
+#: dummy_strings.py:35
+msgid "Kenya"
+msgstr "เคนยา"
+
+#: dummy_strings.py:36
+msgid "Netherlands"
+msgstr "เนเธอร์แลนด์"
+
+#: dummy_strings.py:37
+msgid "Denmark"
+msgstr "เดนมาร์ก"
+
+#: dummy_strings.py:38
+msgid "Norway"
+msgstr "นอร์เวย์"
+
+#: dummy_strings.py:39
+msgid "Ireland"
+msgstr "ไอร์แลนด์"
+
+#: dummy_strings.py:40
+msgid "Italy"
+msgstr "อิตาลี"
+
+#: dummy_strings.py:41
+msgid "Austria"
+msgstr "ออสเตรีย"
+
+#: dummy_strings.py:42
+msgid "Poland"
+msgstr "โปแลนด์"
+
+#: dummy_strings.py:43
+msgid "Czech Republic"
+msgstr "สาธารณรัฐเช็ก"
+
+#: dummy_strings.py:44
+msgid "Hungary"
+msgstr "ฮังการี"
+
+#: dummy_strings.py:45
+msgid "Romania"
+msgstr "โรมาเนีย"
+
+#: dummy_strings.py:46
+msgid "Greece"
+msgstr "กรีซ"
+
+#: dummy_strings.py:47
+msgid "Turkey"
+msgstr "ไก่งวง"
+
+#: dummy_strings.py:48
+msgid "Philippines"
+msgstr "ฟิลิปปินส์"
+
+#: dummy_strings.py:49
+msgid "Thailand"
+msgstr "ประเทศไทย"
+
+#: dummy_strings.py:50
+msgid "Malaysia"
+msgstr "มาเลเซีย"
+
+#: dummy_strings.py:51
+msgid "Vietnam"
+msgstr "เวียดนาม"
+
+#: dummy_strings.py:52
+msgid "New Zealand"
+msgstr "นิวซีแลนด์"
+
+#: dummy_strings.py:53
+msgid "Colombia"
+msgstr "โคลอมเบีย"
+
+#: dummy_strings.py:54
+msgid "Peru"
+msgstr "เปรู"
+
+#: dummy_strings.py:55
+msgid "Egypt"
+msgstr "อียิปต์"
+
+#: dummy_strings.py:56
+msgid "Morocco"
+msgstr "โมร็อกโก"
+
+#: dummy_strings.py:57
+msgid "Afghanistan"
+msgstr "อัฟกานิสถาน"
+
+#: dummy_strings.py:58
+msgid "Albania"
+msgstr "แอลเบเนีย"
+
+#: dummy_strings.py:59
+msgid "Algeria"
+msgstr "แอลจีเรีย"
+
+#: dummy_strings.py:60
+msgid "Andorra"
+msgstr "อันดอร์รา"
+
+#: dummy_strings.py:61
+msgid "Angola"
+msgstr "แองโกลา"
+
+#: dummy_strings.py:62
+msgid "Antigua and Barbuda"
+msgstr "แอนติกาและบาร์บูดา"
+
+#: dummy_strings.py:63
+msgid "Armenia"
+msgstr "อาร์เมเนีย"
+
+#: dummy_strings.py:64
+msgid "Azerbaijan"
+msgstr "อาเซอร์ไบจาน"
+
+#: dummy_strings.py:65
+msgid "Bahamas"
+msgstr "บาฮามาส"
+
+#: dummy_strings.py:66
+msgid "Bahrain"
+msgstr "บาห์เรน"
+
+#: dummy_strings.py:67
+msgid "Bangladesh"
+msgstr "บังคลาเทศ"
+
+#: dummy_strings.py:68
+msgid "Barbados"
+msgstr "บาร์เบโดส"
+
+#: dummy_strings.py:69
+msgid "Belarus"
+msgstr "เบลารุส"
+
+#: dummy_strings.py:70
+msgid "Belgium"
+msgstr "เบลเยียม"
+
+#: dummy_strings.py:71
+msgid "Belize"
+msgstr "เบลีซ"
+
+#: dummy_strings.py:72
+msgid "Benin"
+msgstr "เบนิน"
+
+#: dummy_strings.py:73
+msgid "Bhutan"
+msgstr "ภูฏาน"
+
+#: dummy_strings.py:74
+msgid "Bolivia"
+msgstr "โบลิเวีย"
+
+#: dummy_strings.py:75
+msgid "Bosnia"
+msgstr "บอสเนีย"
+
+#: dummy_strings.py:76
+msgid "Botswana"
+msgstr "บอตสวานา"
+
+#: dummy_strings.py:77
+msgid "Brunei"
+msgstr "บรูไน"
+
+#: dummy_strings.py:78
+msgid "Bulgaria"
+msgstr "บัลแกเรีย"
+
+#: dummy_strings.py:79
+msgid "Burkina Faso"
+msgstr "บูร์กินาฟาโซ"
+
+#: dummy_strings.py:80
+msgid "Burundi"
+msgstr "บุรุนดี"
+
+#: dummy_strings.py:81
+msgid "Cabo Verde"
+msgstr "กาโบ เวิร์ด"
+
+#: dummy_strings.py:82
+msgid "Cambodia"
+msgstr "กัมพูชา"
+
+#: dummy_strings.py:83
+msgid "Cameroon"
+msgstr "แคเมอรูน"
+
+#: dummy_strings.py:84
+msgid "Central African Republic"
+msgstr "สาธารณรัฐอัฟริกากลาง"
+
+#: dummy_strings.py:85
+msgid "Chad"
+msgstr "ชาด"
+
+#: dummy_strings.py:86
+msgid "Comoros"
+msgstr "คอโมโรส"
+
+#: dummy_strings.py:87
+msgid "Congo"
+msgstr "คองโก"
+
+#: dummy_strings.py:88
+msgid "Costa Rica"
+msgstr "คอสตาริกา"
+
+#: dummy_strings.py:89
+msgid "Croatia"
+msgstr "โครเอเชีย"
+
+#: dummy_strings.py:90
+msgid "Cuba"
+msgstr "คิวบา"
+
+#: dummy_strings.py:91
+msgid "Cyprus"
+msgstr "ไซปรัส"
+
+#: dummy_strings.py:92
+msgid "Djibouti"
+msgstr "จิบูตี"
+
+#: dummy_strings.py:93
+msgid "Dominica"
+msgstr "โดมินิกา"
+
+#: dummy_strings.py:94
+msgid "Dominican Republic"
+msgstr "สาธารณรัฐโดมินิกัน"
+
+#: dummy_strings.py:95
+msgid "Ecuador"
+msgstr "เอกวาดอร์"
+
+#: dummy_strings.py:96
+msgid "El Salvador"
+msgstr "เอลซัลวาดอร์"
+
+#: dummy_strings.py:97
+msgid "Equatorial Guinea"
+msgstr "อิเควทอเรียลกินี"
+
+#: dummy_strings.py:98
+msgid "Eritrea"
+msgstr "เอริเทรีย"
+
+#: dummy_strings.py:99
+msgid "Eswatini"
+msgstr "เอสวาตินี"
+
+#: dummy_strings.py:100
+msgid "Ethiopia"
+msgstr "เอธิโอเปีย"
+
+#: dummy_strings.py:101
+msgid "Fiji"
+msgstr "ฟิจิ"
+
+#: dummy_strings.py:102
+msgid "Gabon"
+msgstr "กาบอง"
+
+#: dummy_strings.py:103
+msgid "Gambia"
+msgstr "แกมเบีย"
+
+#: dummy_strings.py:104
+msgid "Georgia"
+msgstr "จอร์เจีย"
+
+#: dummy_strings.py:105
+msgid "Grenada"
+msgstr "เกรเนดา"
+
+#: dummy_strings.py:106
+msgid "Guatemala"
+msgstr "กัวเตมาลา"
+
+#: dummy_strings.py:107
+msgid "Guinea"
+msgstr "กินี"
+
+#: dummy_strings.py:108
+msgid "Guyana"
+msgstr "กายอานา"
+
+#: dummy_strings.py:109
+msgid "Haiti"
+msgstr "เฮติ"
+
+#: dummy_strings.py:110
+msgid "Honduras"
+msgstr "ฮอนดูรัส"
+
+#: dummy_strings.py:111
+msgid "Iceland"
+msgstr "ไอซ์แลนด์"
+
+#: dummy_strings.py:112
+msgid "Iran"
+msgstr "อิหร่าน"
+
+#: dummy_strings.py:113
+msgid "Iraq"
+msgstr "อิรัก"
+
+#: dummy_strings.py:114
+msgid "Jamaica"
+msgstr "จาเมกา"
+
+#: dummy_strings.py:115
+msgid "Jordan"
+msgstr "จอร์แดน"
+
+#: dummy_strings.py:116
+msgid "Kazakhstan"
+msgstr "คาซัคสถาน"
+
+#: dummy_strings.py:117
+msgid "Kiribati"
+msgstr "คิริบาส"
+
+#: dummy_strings.py:118
+msgid "Kuwait"
+msgstr "คูเวต"
+
+#: dummy_strings.py:119
+msgid "Kyrgyzstan"
+msgstr "คีร์กีซสถาน"
+
+#: dummy_strings.py:120
+msgid "Laos"
+msgstr "ลาว"
+
+#: dummy_strings.py:121
+msgid "Latvia"
+msgstr "ลัตเวีย"
+
+#: dummy_strings.py:122
+msgid "Lebanon"
+msgstr "เลบานอน"
+
+#: dummy_strings.py:123
+msgid "Lesotho"
+msgstr "เลโซโท"
+
+#: dummy_strings.py:124
+msgid "Liberia"
+msgstr "ไลบีเรีย"
+
+#: dummy_strings.py:125
+msgid "Libya"
+msgstr "ลิเบีย"
+
+#: dummy_strings.py:126
+msgid "Liechtenstein"
+msgstr "ลิกเตนสไตน์"
+
+#: dummy_strings.py:127
+msgid "Lithuania"
+msgstr "ลิทัวเนีย"
+
+#: dummy_strings.py:128
+msgid "Luxembourg"
+msgstr "ลักเซมเบิร์ก"
+
+#: dummy_strings.py:129
+msgid "Madagascar"
+msgstr "มาดากัสการ์"
+
+#: dummy_strings.py:130
+msgid "Malawi"
+msgstr "มาลาวี"
+
+#: dummy_strings.py:131
+msgid "Maldives"
+msgstr "มัลดีฟส์"
+
+#: dummy_strings.py:132
+msgid "Mali"
+msgstr "มาลี"
+
+#: dummy_strings.py:133
+msgid "Malta"
+msgstr "มอลตา"
+
+#: dummy_strings.py:134
+msgid "Marshall Islands"
+msgstr "หมู่เกาะมาร์แชลล์"
+
+#: dummy_strings.py:135
+msgid "Mauritania"
+msgstr "มอริเตเนีย"
+
+#: dummy_strings.py:136
+msgid "Mauritius"
+msgstr "มอริเชียส"
+
+#: dummy_strings.py:137
+msgid "Micronesia"
+msgstr "ไมโครนีเซีย"
+
+#: dummy_strings.py:138
+msgid "Moldova"
+msgstr "มอลโดวา"
+
+#: dummy_strings.py:139
+msgid "Monaco"
+msgstr "โมนาโก"
+
+#: dummy_strings.py:140
+msgid "Mongolia"
+msgstr "มองโกเลีย"
+
+#: dummy_strings.py:141
+msgid "Montenegro"
+msgstr "มอนเตเนโกร"
+
+#: dummy_strings.py:142
+msgid "Mozambique"
+msgstr "โมซัมบิก"
+
+#: dummy_strings.py:143
+msgid "Myanmar"
+msgstr "พม่า"
+
+#: dummy_strings.py:144
+msgid "Namibia"
+msgstr "นามิเบีย"
+
+#: dummy_strings.py:145
+msgid "Nauru"
+msgstr "นาอูรู"
+
+#: dummy_strings.py:146
+msgid "Nepal"
+msgstr "เนปาล"
+
+#: dummy_strings.py:147
+msgid "Nicaragua"
+msgstr "นิการากัว"
+
+#: dummy_strings.py:148
+msgid "Niger"
+msgstr "ไนเจอร์"
+
+#: dummy_strings.py:149
+msgid "North Macedonia"
+msgstr "มาซิโดเนียเหนือ"
+
+#: dummy_strings.py:150
+msgid "Oman"
+msgstr "โอมาน"
+
+#: dummy_strings.py:151
+msgid "Pakistan"
+msgstr "ปากีสถาน"
+
+#: dummy_strings.py:152
+msgid "Palau"
+msgstr "ปาเลา"
+
+#: dummy_strings.py:153
+msgid "Panama"
+msgstr "ปานามา"
+
+#: dummy_strings.py:154
+msgid "Papua New Guinea"
+msgstr "ปาปัวนิวกินี"
+
+#: dummy_strings.py:155
+msgid "Paraguay"
+msgstr "ปารากวัย"
+
+#: dummy_strings.py:156
+msgid "Portugal"
+msgstr "โปรตุเกส"
+
+#: dummy_strings.py:157
+msgid "Qatar"
+msgstr "กาตาร์"
+
+#: dummy_strings.py:158
+msgid "Rwanda"
+msgstr "รวันดา"
+
+#: dummy_strings.py:159
+msgid "Samoa"
+msgstr "ซามัว"
+
+#: dummy_strings.py:160
+msgid "San Marino"
+msgstr "ซานมารีโน"
+
+#: dummy_strings.py:161
+msgid "Senegal"
+msgstr "เซเนกัล"
+
+#: dummy_strings.py:162
+msgid "Serbia"
+msgstr "เซอร์เบีย"
+
+#: dummy_strings.py:163
+msgid "Seychelles"
+msgstr "เซเชลส์"
+
+#: dummy_strings.py:164
+msgid "Sierra Leone"
+msgstr "เซียร์ราลีโอน"
+
+#: dummy_strings.py:165
+msgid "Slovakia"
+msgstr "สโลวาเกีย"
+
+#: dummy_strings.py:166
+msgid "Slovenia"
+msgstr "สโลวีเนีย"
+
+#: dummy_strings.py:167
+msgid "Solomon Islands"
+msgstr "หมู่เกาะโซโลมอน"
+
+#: dummy_strings.py:168
+msgid "Somalia"
+msgstr "โซมาเลีย"
+
+#: dummy_strings.py:169
+msgid "Sri Lanka"
+msgstr "ศรีลังกา"
+
+#: dummy_strings.py:170
+msgid "Sudan"
+msgstr "ซูดาน"
+
+#: dummy_strings.py:171
+msgid "Suriname"
+msgstr "ซูรินาเม"
+
+#: dummy_strings.py:172
+msgid "Syria"
+msgstr "ซีเรีย"
+
+#: dummy_strings.py:173
+msgid "Tajikistan"
+msgstr "ทาจิกิสถาน"
+
+#: dummy_strings.py:174
+msgid "Tanzania"
+msgstr "แทนซาเนีย"
+
+#: dummy_strings.py:175
+msgid "Togo"
+msgstr "โตโก"
+
+#: dummy_strings.py:176
+msgid "Tonga"
+msgstr "ตองกา"
+
+#: dummy_strings.py:177
+msgid "Trinidad and Tobago"
+msgstr "ตรินิแดดและโตเบโก"
+
+#: dummy_strings.py:178
+msgid "Tunisia"
+msgstr "ตูนิเซีย"
+
+#: dummy_strings.py:179
+msgid "Turkmenistan"
+msgstr "เติร์กเมนิสถาน"
+
+#: dummy_strings.py:180
+msgid "Tuvalu"
+msgstr "ตูวาลู"
+
+#: dummy_strings.py:181
+msgid "Uganda"
+msgstr "ยูกันดา"
+
+#: dummy_strings.py:182
+msgid "Ukraine"
+msgstr "ยูเครน"
+
+#: dummy_strings.py:183
+msgid "United Arab Emirates"
+msgstr "สหรัฐอาหรับเอมิเรตส์"
+
+#: dummy_strings.py:184
+msgid "United Kingdom"
+msgstr "สหราชอาณาจักร"
+
+#: dummy_strings.py:185
+msgid "Uruguay"
+msgstr "อุรุกวัย"
+
+#: dummy_strings.py:186
+msgid "Uzbekistan"
+msgstr "อุซเบกิสถาน"
+
+#: dummy_strings.py:187
+msgid "Vanuatu"
+msgstr "วานูอาตู"
+
+#: dummy_strings.py:188
+msgid "Vatican City"
+msgstr "นครวาติกัน"
+
+#: dummy_strings.py:189
+msgid "Venezuela"
+msgstr "เวเนซุเอลา"
+
+#: dummy_strings.py:190
+msgid "Yemen"
+msgstr "เยเมน"
+
+#: dummy_strings.py:191
+msgid "Zambia"
+msgstr "แซมเบีย"
+
+#: dummy_strings.py:192
+msgid "Zimbabwe"
+msgstr "ซิมบับเว"
+
+#: dummy_strings.py:193 templates/index.html:289 templates/index.html:304
+msgid "Gov Grants"
+msgstr "รัฐบาลแกรนท์"
+
+#: dummy_strings.py:194
+msgid "Relocation/Growth"
+msgstr "การย้ายถิ่นฐาน/การเติบโต"
+
+#: dummy_strings.py:195 templates/index.html:291
+msgid "VCs & Accelerators"
+msgstr "VC และตัวเร่งความเร็ว"
+
+#: dummy_strings.py:196
+msgid "Corporate"
+msgstr "องค์กร"
+
+#: dummy_strings.py:197
+msgid "Perks"
+msgstr "สิทธิพิเศษ"
+
+#: dummy_strings.py:198 templates/index.html:292 templates/index.html:312
+msgid "Cloud & Perks"
+msgstr "คลาวด์และสิทธิพิเศษ"
 
 #: templates/admin.html:25
 msgid "Crawler API System - Admin Dashboard"
@@ -78,7 +862,7 @@ msgstr "วิธี HTTP"
 msgid "Register Source"
 msgstr "ลงทะเบียนแหล่งที่มา"
 
-#: templates/index.html:230 templates/index.html:347
+#: templates/index.html:230 templates/index.html:359
 msgid "Global Startup Ecosystem Explorer"
 msgstr "Explorer ระบบนิเวศสตาร์ทอัพระดับโลก"
 
@@ -86,111 +870,95 @@ msgstr "Explorer ระบบนิเวศสตาร์ทอัพระด
 msgid "190+ Countries · 32,500+ Opportunities · Real-Time Discovery"
 msgstr "190+ ประเทศ · 32,500+ โอกาส · การค้นพบแบบเรียลไทม์"
 
-#: templates/index.html:241
+#: templates/index.html:253
 msgid "Loading..."
 msgstr "กำลังโหลด..."
 
-#: templates/index.html:244
+#: templates/index.html:256
 msgid "Recrawl"
 msgstr "รวบรวมข้อมูลซ้ำ"
 
-#: templates/index.html:248
+#: templates/index.html:260
 msgid "Export CSV"
 msgstr "ส่งออก CSV"
 
-#: templates/index.html:257 templates/index.html:331
+#: templates/index.html:269 templates/index.html:343
 msgid "Country"
 msgstr "ประเทศ"
 
-#: templates/index.html:259
-msgid "All Countries"
-msgstr "ทุกประเทศ"
-
-#: templates/index.html:263
+#: templates/index.html:275
 msgid "Industry"
 msgstr "อุตสาหกรรม"
 
-#: templates/index.html:265
+#: templates/index.html:277
 msgid "All Industries"
 msgstr "อุตสาหกรรมทั้งหมด"
 
-#: templates/index.html:269
+#: templates/index.html:281
 msgid "Search"
 msgstr "ค้นหา"
 
-#: templates/index.html:270
+#: templates/index.html:282
 msgid "Search by title, provider, keyword..."
 msgstr "ค้นหาตามชื่อ ผู้ให้บริการ คำสำคัญ..."
 
-#: templates/index.html:276
+#: templates/index.html:288
 msgid "All Categories"
 msgstr "หมวดหมู่ทั้งหมด"
 
-#: templates/index.html:277 templates/index.html:292
-msgid "Gov Grants"
-msgstr "รัฐบาลแกรนท์"
-
-#: templates/index.html:278
+#: templates/index.html:290
 msgid "Corporate OI"
 msgstr "องค์กร OI"
 
-#: templates/index.html:279
-msgid "VCs & Accelerators"
-msgstr "VC และตัวเร่งความเร็ว"
-
-#: templates/index.html:280 templates/index.html:300
-msgid "Cloud & Perks"
-msgstr "คลาวด์และสิทธิพิเศษ"
-
-#: templates/index.html:281
+#: templates/index.html:293
 msgid "Relocation"
 msgstr "การย้ายถิ่นฐาน"
 
-#: templates/index.html:287
+#: templates/index.html:299
 msgid "Total Matches"
 msgstr "การแข่งขันทั้งหมด"
 
-#: templates/index.html:296
+#: templates/index.html:308
 msgid "VCs & Accel"
 msgstr "VC และ Accel"
 
-#: templates/index.html:304
+#: templates/index.html:316
 msgid "Countries"
 msgstr "ประเทศ"
 
-#: templates/index.html:312
+#: templates/index.html:324
 msgid "Recommended Opportunities"
 msgstr "โอกาสที่แนะนำ"
 
-#: templates/index.html:313
+#: templates/index.html:325
 msgid "Ranked by Fit Score"
 msgstr "จัดอันดับตามคะแนนความฟิต"
 
-#: templates/index.html:321
+#: templates/index.html:333
 msgid "Full Database"
 msgstr "ฐานข้อมูลเต็มรูปแบบ"
 
-#: templates/index.html:329
+#: templates/index.html:341
 msgid "Category"
 msgstr "หมวดหมู่"
 
-#: templates/index.html:330
+#: templates/index.html:342
 msgid "Title"
 msgstr "ชื่อ"
 
-#: templates/index.html:332
+#: templates/index.html:344
 msgid "Provider"
 msgstr "ผู้ให้บริการ"
 
-#: templates/index.html:333
+#: templates/index.html:345
 msgid "Funding"
 msgstr "เงินทุน"
 
-#: templates/index.html:334
+#: templates/index.html:346
 msgid "Equity"
 msgstr "ทุน"
 
-#: templates/index.html:335
+#: templates/index.html:347
 msgid "Score"
 msgstr "คะแนน"
 

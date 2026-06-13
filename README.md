@@ -1,4 +1,11 @@
 <div align="center">
+  <p>
+    <a href="README.md">🇺🇸 English</a> • 
+    <a href="README.ko.md">🇰🇷 한국어</a>
+  </p>
+</div>
+
+<div align="center">
   <img src="https://raw.githubusercontent.com/genoxdeveloper/Startup-funding-database/main/.github/assets/logo.png" alt="Genox Logo" width="120" />
   <h1>🌍 Global Startup Ecosystem Explorer</h1>
   <p><strong>A comprehensive database of 32,500+ global startup opportunities across 190+ countries and 100+ industries.</strong></p>
@@ -8,6 +15,9 @@
     <a href="https://github.com/genoxdeveloper/Startup-funding-database/network/members"><img src="https://img.shields.io/github/forks/genoxdeveloper/Startup-funding-database?style=for-the-badge&color=3b82f6" alt="Forks"/></a>
     <a href="https://github.com/genoxdeveloper/Startup-funding-database/issues"><img src="https://img.shields.io/github/issues/genoxdeveloper/Startup-funding-database?style=for-the-badge&color=ef4444" alt="Issues"/></a>
     <a href="https://github.com/genoxdeveloper/Startup-funding-database/blob/main/LICENSE"><img src="https://img.shields.io/github/license/genoxdeveloper/Startup-funding-database?style=for-the-badge&color=10b981" alt="License"/></a>
+    <br>
+    <a href="https://github.com/sponsors/genoxdeveloper"><img src="https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=for-the-badge&logo=github" alt="GitHub Sponsor"/></a>
+    <a href="https://www.buymeacoffee.com/genoxdeveloper"><img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee"/></a>
   </p>
 </div>
 
@@ -103,6 +113,15 @@ We welcome contributions from developers, startup founders, and ecosystem builde
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+---
+
+## 🎖️ Contributors
+
+A special thanks to our core contributors who made this project possible:
+- **@genoxdeveloper**
+- **@claude**
+- **@gemini**
 
 ---
 
