@@ -43,7 +43,18 @@ INSTANCE_PATH = os.path.join(BASE_DIR, 'instance')
 if not os.path.exists(INSTANCE_PATH):
     os.makedirs(INSTANCE_PATH)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', f'sqlite:///{os.path.join(INSTANCE_PATH, "global_data.db")}')
+if os.environ.get('VERCEL') == '1':
+    import shutil
+    src_db = os.path.join(INSTANCE_PATH, "global_data.db")
+    tmp_db = "/tmp/global_data.db"
+    if not os.path.exists(tmp_db) and os.path.exists(src_db):
+        try:
+            shutil.copy2(src_db, tmp_db)
+        except Exception as e:
+            logging.error(f"Failed to copy DB to /tmp: {e}")
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', f'sqlite:///{tmp_db}')
+else:
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', f'sqlite:///{os.path.join(INSTANCE_PATH, "global_data.db")}')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 app.config['BABEL_SUPPORTED_LOCALES'] = ['en', 'ko', 'ja', 'zh_Hans', 'zh_Hant', 'es', 'fr', 'de', 'it', 'pt', 'ar', 'hi', 'ru', 'tr', 'id', 'vi', 'th']

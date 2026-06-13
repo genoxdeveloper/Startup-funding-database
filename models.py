@@ -49,5 +49,7 @@ class APIKey(db.Model):
 
 def init_db(app):
     db.init_app(app)
-    with app.app_context():
-        db.create_all()
+    import os
+    if os.environ.get('VERCEL') != '1':
+        with app.app_context():
+            db.create_all()
