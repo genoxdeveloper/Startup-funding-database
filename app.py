@@ -235,7 +235,8 @@ def api_data():
         for r in results:
             filtered.append({
                 "title": r.title, "description": r.description,
-                "country": r.country, "category": r.category,
+                "country": str(_(r.country)) if r.country else "Global", 
+                "category": str(_(r.category)) if r.category else "",
                 "industries": r.industries.split(',') if r.industries else [],
                 "status": r.status,
                 "funding": r.funding, "equity": r.equity,

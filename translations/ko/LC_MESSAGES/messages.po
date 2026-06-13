@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-06-13 13:42+0900\n"
-"PO-Revision-Date: 2026-06-13 13:42+0900\n"
+"POT-Creation-Date: 2026-06-13 14:12+0900\n"
+"PO-Revision-Date: 2026-06-13 14:12+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
@@ -17,6 +17,790 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
+
+#: dummy_strings.py:2 dummy_strings.py:29
+msgid "Global"
+msgstr "글로벌"
+
+#: dummy_strings.py:3 templates/index.html:271
+msgid "All Countries"
+msgstr "제국"
+
+#: dummy_strings.py:4
+msgid "Canada"
+msgstr "캐나다"
+
+#: dummy_strings.py:5
+msgid "EU"
+msgstr "EU"
+
+#: dummy_strings.py:6
+msgid "Germany"
+msgstr "독일"
+
+#: dummy_strings.py:7
+msgid "France"
+msgstr "프랑스"
+
+#: dummy_strings.py:8
+msgid "Sweden"
+msgstr "스웨덴"
+
+#: dummy_strings.py:9
+msgid "Finland"
+msgstr "핀란드"
+
+#: dummy_strings.py:10
+msgid "Estonia"
+msgstr "에스토니아"
+
+#: dummy_strings.py:11
+msgid "Spain"
+msgstr "스페인"
+
+#: dummy_strings.py:12
+msgid "Singapore"
+msgstr "싱가포르"
+
+#: dummy_strings.py:13
+msgid "India"
+msgstr "인도"
+
+#: dummy_strings.py:14
+msgid "USA"
+msgstr "미국"
+
+#: dummy_strings.py:15
+msgid "Japan"
+msgstr "일본"
+
+#: dummy_strings.py:16
+msgid "South Korea"
+msgstr "대한민국"
+
+#: dummy_strings.py:17
+msgid "Taiwan"
+msgstr "대만"
+
+#: dummy_strings.py:18
+msgid "Hong Kong"
+msgstr "홍콩"
+
+#: dummy_strings.py:19
+msgid "Australia"
+msgstr "호주"
+
+#: dummy_strings.py:20
+msgid "UAE"
+msgstr "UAE"
+
+#: dummy_strings.py:21
+msgid "Saudi Arabia"
+msgstr "사우디아라비아"
+
+#: dummy_strings.py:22
+msgid "Chile"
+msgstr "칠레"
+
+#: dummy_strings.py:23
+msgid "Brazil"
+msgstr "브라질"
+
+#: dummy_strings.py:24
+msgid "Argentina"
+msgstr "아르헨티나"
+
+#: dummy_strings.py:25
+msgid "Mexico"
+msgstr "멕시코"
+
+#: dummy_strings.py:26
+msgid "South Africa"
+msgstr "남아프리카"
+
+#: dummy_strings.py:27
+msgid "Ghana"
+msgstr "가나"
+
+#: dummy_strings.py:28
+msgid "Nigeria"
+msgstr "나이지리아"
+
+#: dummy_strings.py:30
+msgid "UK"
+msgstr "영국"
+
+#: dummy_strings.py:31
+msgid "Israel"
+msgstr "이스라엘"
+
+#: dummy_strings.py:32
+msgid "Switzerland"
+msgstr "스위스"
+
+#: dummy_strings.py:33
+msgid "China"
+msgstr "중국"
+
+#: dummy_strings.py:34
+msgid "Indonesia"
+msgstr "인도네시아 공화국"
+
+#: dummy_strings.py:35
+msgid "Kenya"
+msgstr "케냐"
+
+#: dummy_strings.py:36
+msgid "Netherlands"
+msgstr "네덜란드"
+
+#: dummy_strings.py:37
+msgid "Denmark"
+msgstr "덴마크"
+
+#: dummy_strings.py:38
+msgid "Norway"
+msgstr "노르웨이"
+
+#: dummy_strings.py:39
+msgid "Ireland"
+msgstr "아일랜드"
+
+#: dummy_strings.py:40
+msgid "Italy"
+msgstr "이탈리아"
+
+#: dummy_strings.py:41
+msgid "Austria"
+msgstr "오스트리아"
+
+#: dummy_strings.py:42
+msgid "Poland"
+msgstr "폴란드"
+
+#: dummy_strings.py:43
+msgid "Czech Republic"
+msgstr "체코"
+
+#: dummy_strings.py:44
+msgid "Hungary"
+msgstr "헝가리"
+
+#: dummy_strings.py:45
+msgid "Romania"
+msgstr "루마니아"
+
+#: dummy_strings.py:46
+msgid "Greece"
+msgstr "그리스"
+
+#: dummy_strings.py:47
+msgid "Turkey"
+msgstr "칠면조"
+
+#: dummy_strings.py:48
+msgid "Philippines"
+msgstr "필리핀 제도"
+
+#: dummy_strings.py:49
+msgid "Thailand"
+msgstr "태국"
+
+#: dummy_strings.py:50
+msgid "Malaysia"
+msgstr "말레이시아"
+
+#: dummy_strings.py:51
+msgid "Vietnam"
+msgstr "베트남"
+
+#: dummy_strings.py:52
+msgid "New Zealand"
+msgstr "뉴질랜드"
+
+#: dummy_strings.py:53
+msgid "Colombia"
+msgstr "콜롬비아"
+
+#: dummy_strings.py:54
+msgid "Peru"
+msgstr "페루"
+
+#: dummy_strings.py:55
+msgid "Egypt"
+msgstr "이집트"
+
+#: dummy_strings.py:56
+msgid "Morocco"
+msgstr "모로코 가죽"
+
+#: dummy_strings.py:57
+msgid "Afghanistan"
+msgstr "아프가니스탄"
+
+#: dummy_strings.py:58
+msgid "Albania"
+msgstr "알바니아"
+
+#: dummy_strings.py:59
+msgid "Algeria"
+msgstr "알제리"
+
+#: dummy_strings.py:60
+msgid "Andorra"
+msgstr "안도라"
+
+#: dummy_strings.py:61
+msgid "Angola"
+msgstr "앙골라"
+
+#: dummy_strings.py:62
+msgid "Antigua and Barbuda"
+msgstr "앤티가 바부다"
+
+#: dummy_strings.py:63
+msgid "Armenia"
+msgstr "아르메니아"
+
+#: dummy_strings.py:64
+msgid "Azerbaijan"
+msgstr "아제르바이잔"
+
+#: dummy_strings.py:65
+msgid "Bahamas"
+msgstr "바하마"
+
+#: dummy_strings.py:66
+msgid "Bahrain"
+msgstr "바레인"
+
+#: dummy_strings.py:67
+msgid "Bangladesh"
+msgstr "방글라데시"
+
+#: dummy_strings.py:68
+msgid "Barbados"
+msgstr "바베이도스"
+
+#: dummy_strings.py:69
+msgid "Belarus"
+msgstr "벨라루스"
+
+#: dummy_strings.py:70
+msgid "Belgium"
+msgstr "벨기에"
+
+#: dummy_strings.py:71
+msgid "Belize"
+msgstr "벨리즈"
+
+#: dummy_strings.py:72
+msgid "Benin"
+msgstr "베냉"
+
+#: dummy_strings.py:73
+msgid "Bhutan"
+msgstr "부탄"
+
+#: dummy_strings.py:74
+msgid "Bolivia"
+msgstr "볼리비아"
+
+#: dummy_strings.py:75
+msgid "Bosnia"
+msgstr "보스니아"
+
+#: dummy_strings.py:76
+msgid "Botswana"
+msgstr "보츠와나"
+
+#: dummy_strings.py:77
+msgid "Brunei"
+msgstr "브루나이"
+
+#: dummy_strings.py:78
+msgid "Bulgaria"
+msgstr "불가리아"
+
+#: dummy_strings.py:79
+msgid "Burkina Faso"
+msgstr "부르키나파소"
+
+#: dummy_strings.py:80
+msgid "Burundi"
+msgstr "부룬디"
+
+#: dummy_strings.py:81
+msgid "Cabo Verde"
+msgstr "카보 베르데"
+
+#: dummy_strings.py:82
+msgid "Cambodia"
+msgstr "캄보디아"
+
+#: dummy_strings.py:83
+msgid "Cameroon"
+msgstr "카메룬"
+
+#: dummy_strings.py:84
+msgid "Central African Republic"
+msgstr "중앙아프리카공화국"
+
+#: dummy_strings.py:85
+msgid "Chad"
+msgstr "차드"
+
+#: dummy_strings.py:86
+msgid "Comoros"
+msgstr "코모로"
+
+#: dummy_strings.py:87
+msgid "Congo"
+msgstr "콩고"
+
+#: dummy_strings.py:88
+msgid "Costa Rica"
+msgstr "코스타리카"
+
+#: dummy_strings.py:89
+msgid "Croatia"
+msgstr "크로아티아"
+
+#: dummy_strings.py:90
+msgid "Cuba"
+msgstr "쿠바"
+
+#: dummy_strings.py:91
+msgid "Cyprus"
+msgstr "키프로스"
+
+#: dummy_strings.py:92
+msgid "Djibouti"
+msgstr "지부티"
+
+#: dummy_strings.py:93
+msgid "Dominica"
+msgstr "도미니카"
+
+#: dummy_strings.py:94
+msgid "Dominican Republic"
+msgstr "도미니카 공화국"
+
+#: dummy_strings.py:95
+msgid "Ecuador"
+msgstr "에콰도르"
+
+#: dummy_strings.py:96
+msgid "El Salvador"
+msgstr "엘살바도르"
+
+#: dummy_strings.py:97
+msgid "Equatorial Guinea"
+msgstr "적도기니"
+
+#: dummy_strings.py:98
+msgid "Eritrea"
+msgstr "에리트레아"
+
+#: dummy_strings.py:99
+msgid "Eswatini"
+msgstr "에스와티니"
+
+#: dummy_strings.py:100
+msgid "Ethiopia"
+msgstr "에티오피아"
+
+#: dummy_strings.py:101
+msgid "Fiji"
+msgstr "피지"
+
+#: dummy_strings.py:102
+msgid "Gabon"
+msgstr "가봉"
+
+#: dummy_strings.py:103
+msgid "Gambia"
+msgstr "감비아"
+
+#: dummy_strings.py:104
+msgid "Georgia"
+msgstr "그루지야"
+
+#: dummy_strings.py:105
+msgid "Grenada"
+msgstr "그레나다"
+
+#: dummy_strings.py:106
+msgid "Guatemala"
+msgstr "과테말라"
+
+#: dummy_strings.py:107
+msgid "Guinea"
+msgstr "기니"
+
+#: dummy_strings.py:108
+msgid "Guyana"
+msgstr "가이아나"
+
+#: dummy_strings.py:109
+msgid "Haiti"
+msgstr "아이티"
+
+#: dummy_strings.py:110
+msgid "Honduras"
+msgstr "온두라스"
+
+#: dummy_strings.py:111
+msgid "Iceland"
+msgstr "아이슬란드"
+
+#: dummy_strings.py:112
+msgid "Iran"
+msgstr "이란"
+
+#: dummy_strings.py:113
+msgid "Iraq"
+msgstr "이라크"
+
+#: dummy_strings.py:114
+msgid "Jamaica"
+msgstr "자메이카"
+
+#: dummy_strings.py:115
+msgid "Jordan"
+msgstr "요르단"
+
+#: dummy_strings.py:116
+msgid "Kazakhstan"
+msgstr "카자흐스탄"
+
+#: dummy_strings.py:117
+msgid "Kiribati"
+msgstr "키리바시"
+
+#: dummy_strings.py:118
+msgid "Kuwait"
+msgstr "쿠웨이트"
+
+#: dummy_strings.py:119
+msgid "Kyrgyzstan"
+msgstr "키르기스스탄"
+
+#: dummy_strings.py:120
+msgid "Laos"
+msgstr "라오스"
+
+#: dummy_strings.py:121
+msgid "Latvia"
+msgstr "라트비아"
+
+#: dummy_strings.py:122
+msgid "Lebanon"
+msgstr "레바논"
+
+#: dummy_strings.py:123
+msgid "Lesotho"
+msgstr "레소토"
+
+#: dummy_strings.py:124
+msgid "Liberia"
+msgstr "라이베리아"
+
+#: dummy_strings.py:125
+msgid "Libya"
+msgstr "리비아"
+
+#: dummy_strings.py:126
+msgid "Liechtenstein"
+msgstr "리히텐슈타인"
+
+#: dummy_strings.py:127
+msgid "Lithuania"
+msgstr "리투아니아"
+
+#: dummy_strings.py:128
+msgid "Luxembourg"
+msgstr "룩셈부르크"
+
+#: dummy_strings.py:129
+msgid "Madagascar"
+msgstr "마다가스카르"
+
+#: dummy_strings.py:130
+msgid "Malawi"
+msgstr "말라위"
+
+#: dummy_strings.py:131
+msgid "Maldives"
+msgstr "몰디브"
+
+#: dummy_strings.py:132
+msgid "Mali"
+msgstr "말리"
+
+#: dummy_strings.py:133
+msgid "Malta"
+msgstr "몰타"
+
+#: dummy_strings.py:134
+msgid "Marshall Islands"
+msgstr "마샬 군도"
+
+#: dummy_strings.py:135
+msgid "Mauritania"
+msgstr "모리타니"
+
+#: dummy_strings.py:136
+msgid "Mauritius"
+msgstr "모리셔스"
+
+#: dummy_strings.py:137
+msgid "Micronesia"
+msgstr "미크로네시아"
+
+#: dummy_strings.py:138
+msgid "Moldova"
+msgstr "몰도바"
+
+#: dummy_strings.py:139
+msgid "Monaco"
+msgstr "모나코"
+
+#: dummy_strings.py:140
+msgid "Mongolia"
+msgstr "몽골리아"
+
+#: dummy_strings.py:141
+msgid "Montenegro"
+msgstr "몬테네그로"
+
+#: dummy_strings.py:142
+msgid "Mozambique"
+msgstr "모잠비크"
+
+#: dummy_strings.py:143
+msgid "Myanmar"
+msgstr "미얀마"
+
+#: dummy_strings.py:144
+msgid "Namibia"
+msgstr "나미비아"
+
+#: dummy_strings.py:145
+msgid "Nauru"
+msgstr "나우루"
+
+#: dummy_strings.py:146
+msgid "Nepal"
+msgstr "네팔"
+
+#: dummy_strings.py:147
+msgid "Nicaragua"
+msgstr "니카라과"
+
+#: dummy_strings.py:148
+msgid "Niger"
+msgstr "니제르"
+
+#: dummy_strings.py:149
+msgid "North Macedonia"
+msgstr "북마케도니아"
+
+#: dummy_strings.py:150
+msgid "Oman"
+msgstr "오만"
+
+#: dummy_strings.py:151
+msgid "Pakistan"
+msgstr "파키스탄"
+
+#: dummy_strings.py:152
+msgid "Palau"
+msgstr "팔라우"
+
+#: dummy_strings.py:153
+msgid "Panama"
+msgstr "파나마"
+
+#: dummy_strings.py:154
+msgid "Papua New Guinea"
+msgstr "파푸아뉴기니"
+
+#: dummy_strings.py:155
+msgid "Paraguay"
+msgstr "파라과이"
+
+#: dummy_strings.py:156
+msgid "Portugal"
+msgstr "포르투갈"
+
+#: dummy_strings.py:157
+msgid "Qatar"
+msgstr "카타르"
+
+#: dummy_strings.py:158
+msgid "Rwanda"
+msgstr "르완다"
+
+#: dummy_strings.py:159
+msgid "Samoa"
+msgstr "사모아"
+
+#: dummy_strings.py:160
+msgid "San Marino"
+msgstr "산마리노"
+
+#: dummy_strings.py:161
+msgid "Senegal"
+msgstr "세네갈"
+
+#: dummy_strings.py:162
+msgid "Serbia"
+msgstr "세르비아"
+
+#: dummy_strings.py:163
+msgid "Seychelles"
+msgstr "세이셸"
+
+#: dummy_strings.py:164
+msgid "Sierra Leone"
+msgstr "시에라리온"
+
+#: dummy_strings.py:165
+msgid "Slovakia"
+msgstr "슬로바키아"
+
+#: dummy_strings.py:166
+msgid "Slovenia"
+msgstr "슬로베니아"
+
+#: dummy_strings.py:167
+msgid "Solomon Islands"
+msgstr "솔로몬 제도"
+
+#: dummy_strings.py:168
+msgid "Somalia"
+msgstr "소말리아"
+
+#: dummy_strings.py:169
+msgid "Sri Lanka"
+msgstr "스리랑카"
+
+#: dummy_strings.py:170
+msgid "Sudan"
+msgstr "수단"
+
+#: dummy_strings.py:171
+msgid "Suriname"
+msgstr "수리남"
+
+#: dummy_strings.py:172
+msgid "Syria"
+msgstr "시리아"
+
+#: dummy_strings.py:173
+msgid "Tajikistan"
+msgstr "타지키스탄"
+
+#: dummy_strings.py:174
+msgid "Tanzania"
+msgstr "탄자니아"
+
+#: dummy_strings.py:175
+msgid "Togo"
+msgstr "토고"
+
+#: dummy_strings.py:176
+msgid "Tonga"
+msgstr "통가"
+
+#: dummy_strings.py:177
+msgid "Trinidad and Tobago"
+msgstr "트리니다드 토바고"
+
+#: dummy_strings.py:178
+msgid "Tunisia"
+msgstr "튀니지"
+
+#: dummy_strings.py:179
+msgid "Turkmenistan"
+msgstr "투르크메니스탄"
+
+#: dummy_strings.py:180
+msgid "Tuvalu"
+msgstr "투발루"
+
+#: dummy_strings.py:181
+msgid "Uganda"
+msgstr "우간다"
+
+#: dummy_strings.py:182
+msgid "Ukraine"
+msgstr "우크라이나"
+
+#: dummy_strings.py:183
+msgid "United Arab Emirates"
+msgstr "아랍에미리트"
+
+#: dummy_strings.py:184
+msgid "United Kingdom"
+msgstr "영국"
+
+#: dummy_strings.py:185
+msgid "Uruguay"
+msgstr "우루과이"
+
+#: dummy_strings.py:186
+msgid "Uzbekistan"
+msgstr "우즈베키스탄"
+
+#: dummy_strings.py:187
+msgid "Vanuatu"
+msgstr "바누아투"
+
+#: dummy_strings.py:188
+msgid "Vatican City"
+msgstr "바티칸 시국"
+
+#: dummy_strings.py:189
+msgid "Venezuela"
+msgstr "베네수엘라"
+
+#: dummy_strings.py:190
+msgid "Yemen"
+msgstr "예멘 아랍 공화국"
+
+#: dummy_strings.py:191
+msgid "Zambia"
+msgstr "잠비아"
+
+#: dummy_strings.py:192
+msgid "Zimbabwe"
+msgstr "짐바브웨"
+
+#: dummy_strings.py:193 templates/index.html:289 templates/index.html:304
+msgid "Gov Grants"
+msgstr "정부 보조금"
+
+#: dummy_strings.py:194
+msgid "Relocation/Growth"
+msgstr "이전/성장"
+
+#: dummy_strings.py:195 templates/index.html:291
+msgid "VCs & Accelerators"
+msgstr "VC 및 액셀러레이터"
+
+#: dummy_strings.py:196
+msgid "Corporate"
+msgstr "기업"
+
+#: dummy_strings.py:197
+msgid "Perks"
+msgstr "특전"
+
+#: dummy_strings.py:198 templates/index.html:292 templates/index.html:312
+msgid "Cloud & Perks"
+msgstr "클라우드 및 혜택"
 
 #: templates/admin.html:25
 msgid "Crawler API System - Admin Dashboard"
@@ -78,7 +862,7 @@ msgstr "HTTP 방법"
 msgid "Register Source"
 msgstr "소스 등록"
 
-#: templates/index.html:230 templates/index.html:347
+#: templates/index.html:230 templates/index.html:359
 msgid "Global Startup Ecosystem Explorer"
 msgstr "글로벌 스타트업 생태계 탐색기"
 
@@ -86,111 +870,95 @@ msgstr "글로벌 스타트업 생태계 탐색기"
 msgid "190+ Countries · 32,500+ Opportunities · Real-Time Discovery"
 msgstr "190개 이상의 국가 · 32,500개 이상의 기회 · 실시간 검색"
 
-#: templates/index.html:241
+#: templates/index.html:253
 msgid "Loading..."
 msgstr "로드 중..."
 
-#: templates/index.html:244
+#: templates/index.html:256
 msgid "Recrawl"
 msgstr "재크롤링"
 
-#: templates/index.html:248
+#: templates/index.html:260
 msgid "Export CSV"
 msgstr "CSV 내보내기"
 
-#: templates/index.html:257 templates/index.html:331
+#: templates/index.html:269 templates/index.html:343
 msgid "Country"
 msgstr "국가"
 
-#: templates/index.html:259
-msgid "All Countries"
-msgstr "제국"
-
-#: templates/index.html:263
+#: templates/index.html:275
 msgid "Industry"
 msgstr "산업"
 
-#: templates/index.html:265
+#: templates/index.html:277
 msgid "All Industries"
 msgstr "모든 산업"
 
-#: templates/index.html:269
+#: templates/index.html:281
 msgid "Search"
 msgstr "찾다"
 
-#: templates/index.html:270
+#: templates/index.html:282
 msgid "Search by title, provider, keyword..."
 msgstr "제목, 공급자, 키워드로 검색..."
 
-#: templates/index.html:276
+#: templates/index.html:288
 msgid "All Categories"
 msgstr "모든 카테고리"
 
-#: templates/index.html:277 templates/index.html:292
-msgid "Gov Grants"
-msgstr "정부 보조금"
-
-#: templates/index.html:278
+#: templates/index.html:290
 msgid "Corporate OI"
 msgstr "기업 OI"
 
-#: templates/index.html:279
-msgid "VCs & Accelerators"
-msgstr "VC 및 액셀러레이터"
-
-#: templates/index.html:280 templates/index.html:300
-msgid "Cloud & Perks"
-msgstr "클라우드 및 혜택"
-
-#: templates/index.html:281
+#: templates/index.html:293
 msgid "Relocation"
 msgstr "재배치"
 
-#: templates/index.html:287
+#: templates/index.html:299
 msgid "Total Matches"
 msgstr "총 경기"
 
-#: templates/index.html:296
+#: templates/index.html:308
 msgid "VCs & Accel"
 msgstr "VC 및 액셀"
 
-#: templates/index.html:304
+#: templates/index.html:316
 msgid "Countries"
 msgstr "국가"
 
-#: templates/index.html:312
+#: templates/index.html:324
 msgid "Recommended Opportunities"
 msgstr "추천 기회"
 
-#: templates/index.html:313
+#: templates/index.html:325
 msgid "Ranked by Fit Score"
 msgstr "적합도에 따른 순위"
 
-#: templates/index.html:321
+#: templates/index.html:333
 msgid "Full Database"
 msgstr "전체 데이터베이스"
 
-#: templates/index.html:329
+#: templates/index.html:341
 msgid "Category"
 msgstr "범주"
 
-#: templates/index.html:330
+#: templates/index.html:342
 msgid "Title"
 msgstr "제목"
 
-#: templates/index.html:332
+#: templates/index.html:344
 msgid "Provider"
 msgstr "공급자"
 
-#: templates/index.html:333
+#: templates/index.html:345
 msgid "Funding"
 msgstr "자금 조달"
 
-#: templates/index.html:334
+#: templates/index.html:346
 msgid "Equity"
 msgstr "형평성"
 
-#: templates/index.html:335
+#: templates/index.html:347
 msgid "Score"
 msgstr "점수"
 

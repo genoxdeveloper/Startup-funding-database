@@ -236,7 +236,19 @@ tr:hover td { background: var(--surface-hover); }
       <option value="ko" {% if request.args.get('lang') == 'ko' %}selected{% endif %}>한국어</option>
       <option value="ja" {% if request.args.get('lang') == 'ja' %}selected{% endif %}>日本語</option>
       <option value="zh_Hans" {% if request.args.get('lang') == 'zh_Hans' %}selected{% endif %}>简体中文</option>
+      <option value="zh_Hant" {% if request.args.get('lang') == 'zh_Hant' %}selected{% endif %}>繁體中文</option>
       <option value="es" {% if request.args.get('lang') == 'es' %}selected{% endif %}>Español</option>
+      <option value="fr" {% if request.args.get('lang') == 'fr' %}selected{% endif %}>Français</option>
+      <option value="de" {% if request.args.get('lang') == 'de' %}selected{% endif %}>Deutsch</option>
+      <option value="it" {% if request.args.get('lang') == 'it' %}selected{% endif %}>Italiano</option>
+      <option value="pt" {% if request.args.get('lang') == 'pt' %}selected{% endif %}>Português</option>
+      <option value="ar" {% if request.args.get('lang') == 'ar' %}selected{% endif %}>العربية</option>
+      <option value="hi" {% if request.args.get('lang') == 'hi' %}selected{% endif %}>हिन्दी</option>
+      <option value="ru" {% if request.args.get('lang') == 'ru' %}selected{% endif %}>Русский</option>
+      <option value="tr" {% if request.args.get('lang') == 'tr' %}selected{% endif %}>Türkçe</option>
+      <option value="id" {% if request.args.get('lang') == 'id' %}selected{% endif %}>Bahasa Indonesia</option>
+      <option value="vi" {% if request.args.get('lang') == 'vi' %}selected{% endif %}>Tiếng Việt</option>
+      <option value="th" {% if request.args.get('lang') == 'th' %}selected{% endif %}>ไทย</option>
     </select>
     <div class="sync-info" id="syncInfo">{{ _('Loading...') }}</div>
     <button class="btn btn-primary" id="btnRecrawl">
@@ -343,8 +355,16 @@ tr:hover td { background: var(--surface-hover); }
   </div>
 </div>
 
-<footer class="footer">
-  <div>© 2026 Genox Holdings · {{ _('Global Startup Ecosystem Explorer') }}</div>
+<footer class="footer" style="flex-direction: column; gap: 8px; text-align: center;">
+  <div><strong>Built with ❤️ by the Genox Holdings Team for the Global Founder Community.</strong></div>
+  <div>© 2026 Genox 제녹스 · {{ _('Global Startup Ecosystem Explorer') }}</div>
+  <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+    <a href="https://buygit.com" target="_blank" style="color: var(--text-muted); text-decoration: underline;">buygit.com</a>
+    <a href="https://genoxholdings.com" target="_blank" style="color: var(--text-muted); text-decoration: underline;">genoxholdings.com</a>
+    <span>admin@genox.one</span>
+    <span>support@buygit.com</span>
+    <span>Seoul, South Korea</span>
+  </div>
   <div id="footerStats"></div>
 </footer>
 

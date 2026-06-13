@@ -1,106 +1,102 @@
-# 🌍 Global Startup Funding Database 🚀
-
 <div align="center">
-  <img src="https://img.shields.io/github/stars/genoxdeveloper/Startup-funding-database?style=social" alt="GitHub stars"/>
-  <img src="https://img.shields.io/github/forks/genoxdeveloper/Startup-funding-database?style=social" alt="GitHub forks"/>
-  <img src="https://img.shields.io/github/license/genoxdeveloper/Startup-funding-database" alt="License"/>
-  <img src="https://img.shields.io/badge/Python-3.9+-blue.svg" alt="Python Version"/>
-  <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintained"/>
+  <img src="https://raw.githubusercontent.com/genoxdeveloper/Startup-funding-database/main/.github/assets/logo.png" alt="Genox Logo" width="120" />
+  <h1>🌍 Global Startup Ecosystem Explorer</h1>
+  <p><strong>A comprehensive database of 32,500+ global startup opportunities across 190+ countries and 100+ industries.</strong></p>
+
+  <p>
+    <a href="https://github.com/genoxdeveloper/Startup-funding-database/stargazers"><img src="https://img.shields.io/github/stars/genoxdeveloper/Startup-funding-database?style=for-the-badge&color=f59e0b" alt="Stars"/></a>
+    <a href="https://github.com/genoxdeveloper/Startup-funding-database/network/members"><img src="https://img.shields.io/github/forks/genoxdeveloper/Startup-funding-database?style=for-the-badge&color=3b82f6" alt="Forks"/></a>
+    <a href="https://github.com/genoxdeveloper/Startup-funding-database/issues"><img src="https://img.shields.io/github/issues/genoxdeveloper/Startup-funding-database?style=for-the-badge&color=ef4444" alt="Issues"/></a>
+    <a href="https://github.com/genoxdeveloper/Startup-funding-database/blob/main/LICENSE"><img src="https://img.shields.io/github/license/genoxdeveloper/Startup-funding-database?style=for-the-badge&color=10b981" alt="License"/></a>
+  </p>
 </div>
 
-<p align="center">
-  <strong>The Ultimate 100% Free, Automated Database for Startup Grants, VCs, and Corporate Innovation Programs.</strong>
-</p>
+---
+
+## ✨ Features
+
+- **🌐 17 Languages Supported**: Native UI and data translations for English, 한국어, 日本語, 简体中文, 繁體中文, Español, Français, Deutsch, Italiano, Português, العربية, हिन्दी, Русский, Türkçe, Bahasa Indonesia, Tiếng Việt, and ไทย.
+- **🚀 32,500+ Opportunities**: Automatically crawled database of Gov Grants, Corporate Accelerators, VCs, Cloud Perks, and Relocation programs.
+- **⚡ Async Crawling**: Real-time background data fetching from global sources without blocking the main thread.
+- **🔒 Admin Dashboard**: Manage crawler sources, test APIs, and review data securely.
+- **☁️ 1-Click Free Hosting Ready**: Out-of-the-box configurations for Vercel, Railway, and Render.
+- **📄 Export to CSV**: Download filtered datasets instantly for offline analysis.
 
 ---
 
-## 🌟 Why Star This Repository?
+## 🛠️ Quick Installation (Free Hosting)
 
-If you are a **Founder, Investor, or Ecosystem Builder**, starring this repository ensures you stay updated on the latest global funding opportunities.
+Deploy this platform for **free** using one of the following providers. Configuration files are already included!
 
-- 📈 **Continuous Updates:** We regularly integrate new crawlers for Global VCs, accelerators (YC, Techstars), and government grants.
-- 💡 **AI Matchmaking (Coming Soon):** Future updates will feature AI-driven fit scoring for startups based on their profile.
-- 🤝 **Community-Driven:** Join a fast-growing community of founders seeking non-dilutive capital and venture backing.
+### Option 1: Vercel (Recommended)
+1. Fork or clone this repository to your GitHub account.
+2. Sign in to [Vercel](https://vercel.com/) and click **Add New Project**.
+3. Import your `Startup-funding-database` repository.
+4. Vercel will automatically detect the `vercel.json` and deploy the Python (Flask) app using serverless functions.
+5. Click **Deploy**.
 
-⭐ **Please consider starring the repo to support the open-source startup ecosystem!** ⭐
+### Option 2: Render
+1. Sign in to [Render](https://render.com/).
+2. Click **New +** and select **Web Service**.
+3. Connect your GitHub account and select this repository.
+4. Render will automatically use the `render.yaml` configuration.
+5. Click **Create Web Service**.
 
----
-
-## 🚀 Features
-
-- **32,500+ Opportunities:** Aggregates funding data from global government portals, massive VC databases, and corporate innovation sectors.
-- **Multilingual Support (17 Languages):** Fully localized interface supporting English, Korean (한국어), Japanese (日本語), Chinese (中文), Spanish (Español), French (Français), German (Deutsch), Arabic (العربية), Hindi (हिन्दी), and more!
-- **Automated Crawlers:** Built-in multi-threaded crawlers sync the latest data automatically in the background.
-- **Premium "Serious Dark" UI:** Optimized for modern, fast, and accessible user experience without heavy frontend frameworks.
-- **Zero-Cost Deployment:** Run it on the cloud for absolutely free (see guides below).
-
----
-
-## 🌐 Supported Languages
-The app automatically detects your browser language or can be forced via the URL (e.g., `/?lang=ko`).
-
-`English (en)` | `Korean (ko)` | `Japanese (ja)` | `Chinese Simplified (zh_Hans)` | `Chinese Traditional (zh_Hant)` | `Spanish (es)` | `French (fr)` | `German (de)` | `Italian (it)` | `Portuguese (pt)` | `Russian (ru)` | `Arabic (ar)` | `Hindi (hi)` | `Turkish (tr)` | `Indonesian (id)` | `Vietnamese (vi)` | `Thai (th)`
+### Option 3: Railway
+1. Sign in to [Railway](https://railway.app/).
+2. Click **New Project** → **Deploy from GitHub repo**.
+3. Select this repository.
+4. Railway will automatically detect the `Procfile` and install dependencies.
+5. Click **Deploy**.
 
 ---
 
-## ⚡ 1-Click Free Deployment
+## 💻 Local Development
 
-You can deploy this application for free on popular cloud platforms. The repo includes all necessary configuration files out of the box!
-
-### 🚂 Deploy on Railway (Recommended)
-Railway reads the included `Procfile` and `requirements.txt` automatically.
-1. Sign up on [Railway.app](https://railway.app/).
-2. Click **New Project** -> **Deploy from GitHub repo**.
-3. Select this repository. Railway will build and deploy the app instantly.
-
-### ▲ Deploy on Vercel
-Vercel is optimized for Serverless functions. This repo includes a ready-to-use `vercel.json`.
-1. Sign up on [Vercel.com](https://vercel.com).
-2. Click **Add New** -> **Project**.
-3. Import this repository.
-4. Keep the framework preset to "Other" and deploy.
-
-### ☁️ Deploy on Render
-Render reads the `render.yaml` infrastructure-as-code file.
-1. Sign up on [Render.com](https://render.com).
-2. Click **New** -> **Blueprint**.
-3. Connect your GitHub and select this repository.
-4. Render will provision the free web service automatically.
-
----
-
-## 💻 Local Installation
-
-Want to run it locally or contribute? It takes less than 2 minutes:
-
+### 1. Clone the repository
 ```bash
-# 1. Clone the repository
 git clone https://github.com/genoxdeveloper/Startup-funding-database.git
 cd Startup-funding-database
+```
 
-# 2. Create a virtual environment
+### 2. Create a virtual environment
+```bash
+# On Windows
 python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+.\venv\Scripts\activate
 
-# 3. Install dependencies
+# On macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-# 4. Start the application
+### 4. Run the application
+```bash
 python app.py
 ```
-Open your browser and navigate to `http://127.0.0.1:5000`.
+The server will start at `http://127.0.0.1:8000`. 
+- **Main Dashboard**: `http://127.0.0.1:8000/`
+- **Admin Panel**: `http://127.0.0.1:8000/admin` (Requires API Key header or query parameter `?api_key=default-insecure-admin-key-change-me`)
 
 ---
 
-## 🛡️ Admin Dashboard
-To monitor the background crawlers or trigger manual synchronization, navigate to:
-`http://127.0.0.1:5000/admin`
-*Requires an Admin API Key configured in your environment or prompted on load.*
+## 🌎 Supported Translations
+
+Powered by `flask-babel` and `deep-translator`, we offer true localized experiences for the startup community globally:
+🇺🇸 English | 🇰🇷 Korean | 🇯🇵 Japanese | 🇨🇳 Chinese (Simplified/Traditional) | 🇪🇸 Spanish | 🇫🇷 French | 🇩🇪 German | 🇮🇹 Italian | 🇵🇹 Portuguese | 🇸🇦 Arabic | 🇮🇳 Hindi | 🇷🇺 Russian | 🇹🇷 Turkish | 🇮🇩 Indonesian | 🇻🇳 Vietnamese | 🇹🇭 Thai
+
+*(Translations map automatically detects browser language or can be set manually via the dropdown).*
 
 ---
 
 ## 🤝 Contributing
-Pull requests are welcome! If you know a great public startup database or VC list, feel free to contribute a new crawler script in the `startup_crawler_global.py` file.
+
+We welcome contributions from developers, startup founders, and ecosystem builders! 
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -110,10 +106,14 @@ Pull requests are welcome! If you know a great public startup database or VC lis
 
 ---
 
-## 📜 License
-Distributed under the MIT License. See `LICENSE` for more information.
-
 <div align="center">
-  <b>Built with ❤️ by the Genox Holdings Team for the Global Founder Community.</b><br>
-  <a href="https://genoxholdings.com">genoxholdings.com</a>
+  <p><strong>Built with ❤️ by the Genox Holdings Team for the Global Founder Community.</strong></p>
+  <p>© 2026 Genox 제녹스. All rights reserved.</p>
+  <p>
+    <a href="https://buygit.com">buygit.com</a> • 
+    <a href="https://genoxholdings.com">genoxholdings.com</a> • 
+    <a href="mailto:admin@genox.one">admin@genox.one</a> • 
+    <a href="mailto:support@buygit.com">support@buygit.com</a>
+  </p>
+  <p>Seoul, South Korea</p>
 </div>
